@@ -1,0 +1,289 @@
+2020-05-10T11:29:59.2977226-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 17.8351ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T11:30:19.7941177-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 11.9345ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T11:36:16.7943943-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 14.4101ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T11:36:37.2937862-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 11.8747ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T11:40:52.2938087-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 24.6321ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T11:45:19.2945708-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 4.7914ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T11:50:46.2978477-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 6.7377ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T11:52:58.7936214-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 4.1526ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T11:56:42.7944721-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 5.6882ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T12:04:28.2979858-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 8.4658ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T12:10:14.7975476-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 4.4436ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T12:13:49.2946910-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 12.8826ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T12:14:50.2939141-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 7.8818ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T12:16:42.2944375-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 11.6087ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T12:17:02.7940857-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 12.7384ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T12:27:33.4587141-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T12:28:30.7981637-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 17.3547ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T12:29:03.0188532-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T12:33:06.4755677-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T12:33:06.5000347-03:00 [ERR] (HealthChecks.UI.Core.HostedService.HealthCheckReportCollector) GetHealthReport threw an exception when trying to get report from https://localhost:5001/healthcheck configured with name Dependencies.
+System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'SslStream'.
+   at System.Net.Security.SslStream.ThrowIfExceptional()
+   at System.Net.Security.SslStream.CheckThrow(Boolean authSuccessCheck, Boolean shutdownCheck)
+   at System.Net.Security.SslStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnection.WriteToStreamAsync(ReadOnlyMemory`1 source)
+   at System.Net.Http.HttpConnection.FlushAsync()
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithNtConnectionAuthAsync(HttpConnection connection, HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.GetHealthReport(HealthCheckConfiguration configuration)
+2020-05-10T12:33:59.0290455-03:00 [ERR] (buying_order_server.Services.AbstractCronJob) Error trying to dispose cron timer
+2020-05-10T12:34:50.7978906-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 8.5878ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T12:35:23.8018186-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T12:43:40.3299489-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T20:52:07.2933326-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 10.9173ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:04:31.2895578-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 6.8694ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:08:55.7898853-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 10.2271ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:12:09.2894697-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 5.9823ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:12:29.7892356-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 11.3852ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:15:43.2894925-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 11.9014ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:16:13.7891431-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 4.8763ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:17:25.2897192-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 11.8432ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:18:16.2900293-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 10.0881ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:22:41.7899770-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 8.934ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:24:13.7899040-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 8.6324ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:35:40.2929149-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 4.8461ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:43:19.7894731-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 6.0637ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:48:05.2894217-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 2.7508ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T21:50:28.2032652-03:00 [WRN] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Ecosys Api" completed after 24.9683ms with status Degraded and '"Discover endpoint #0 is not responding with code in 200...299 range, the current status is BadGateway."'
+2020-05-10T22:01:40.7895379-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 8.6757ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T22:06:06.2895294-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 7.2477ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T22:09:50.7895072-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 6.5583ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T22:13:02.2934548-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 4.376ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T22:14:34.6761394-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:15:36.5011267-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:15:37.0079131-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:16:01.4290521-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:16:01.9235012-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:29:38.5317316-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:29:47.8424552-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:29:48.3080817-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:30:47.7930310-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 10.7116ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T22:30:58.5185759-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:30:59.0451878-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:42:44.2934168-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:43:29.2934033-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 4.5192ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T22:44:16.7604496-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:50:45.8272035-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:51:14.5753420-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:51:18.3041685-03:00 [ERR] (buying_order_server.API.v1.AppExecutionStatusHub) Could not send hub message
+2020-05-10T22:54:31.7929081-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 8.7515ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T22:57:01.7936461-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 4.3416ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T23:00:46.2895642-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 15.8886ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T23:01:37.2896194-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 17.0547ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T23:09:38.3991202-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371895532
+2020-05-10T23:09:38.4315645-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372034247
+2020-05-10T23:09:38.5324585-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370013004
+2020-05-10T23:09:38.6257920-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371972980
+2020-05-10T23:09:38.6603636-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371909883
+2020-05-10T23:09:38.7501205-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371963309
+2020-05-10T23:09:38.8470695-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375087474
+2020-05-10T23:09:38.8491632-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:09:38.9101230-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373504039
+2020-05-10T23:09:39.0939788-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373504039
+2020-05-10T23:09:39.0953297-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 477356564
+2020-05-10T23:09:39.0986968-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:09:39.1648416-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375546858
+2020-05-10T23:09:39.2284471-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372035326
+2020-05-10T23:09:39.2916779-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372034247
+2020-05-10T23:09:39.3555864-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372825385
+2020-05-10T23:09:39.4189228-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371891397
+2020-05-10T23:09:39.4818025-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372779714
+2020-05-10T23:09:39.5443754-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373996948
+2020-05-10T23:09:39.6188124-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 452697169
+2020-05-10T23:09:39.6887661-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373506626
+2020-05-10T23:09:39.8156968-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 466398281
+2020-05-10T23:09:39.8176083-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375087474
+2020-05-10T23:09:39.9129789-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 487336014
+2020-05-10T23:09:39.9484518-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371895532
+2020-05-10T23:09:40.0749949-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372034247
+2020-05-10T23:09:40.1991837-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 425517245
+2020-05-10T23:09:40.2633783-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 501460047
+2020-05-10T23:09:40.2644401-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375764988
+2020-05-10T23:09:40.2636129-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371895532
+2020-05-10T23:09:40.3263380-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372392258
+2020-05-10T23:09:40.3900306-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 374041276
+2020-05-10T23:09:40.4880591-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372392258
+2020-05-10T23:09:40.5232278-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370013004
+2020-05-10T23:09:40.5852284-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371928840
+2020-05-10T23:09:40.6434544-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372825385
+2020-05-10T23:09:40.7065994-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:09:40.7712267-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:09:40.8340183-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371972980
+2020-05-10T23:09:40.9130328-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373504039
+2020-05-10T23:09:41.0636204-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372035326
+2020-05-10T23:09:41.0640294-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:09:41.0966899-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:09:41.1592412-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371892228
+2020-05-10T23:09:41.2765620-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:09:41.3322154-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:09:41.4586409-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372779714
+2020-05-10T23:09:41.4595592-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373996948
+2020-05-10T23:09:41.4599786-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:09:41.5474880-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370013004
+2020-05-10T23:09:41.5809862-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:09:41.8020125-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 506979944
+2020-05-10T23:09:41.8029722-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:09:41.9282166-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:09:41.9282647-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:09:42.0796519-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375089222
+2020-05-10T23:09:42.0483646-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:09:42.0474229-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:09:42.0480168-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371963309
+2020-05-10T23:09:42.1390482-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372034247
+2020-05-10T23:09:47.6012882-03:00 [ERR] (buying_order_server.Services.AbstractCronJob) E-mail 1 of 86 could not be sent to ana.cadence@gmail.com
+2020-05-10T23:11:30.4898796-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 477356564
+2020-05-10T23:11:30.4562225-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372779714
+2020-05-10T23:11:30.6863672-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 466398281
+2020-05-10T23:11:30.6865523-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372035326
+2020-05-10T23:11:30.7516613-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372825385
+2020-05-10T23:11:30.8160142-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375546858
+2020-05-10T23:11:30.8781597-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 374041276
+2020-05-10T23:11:30.9412175-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373504039
+2020-05-10T23:11:31.0045924-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371895532
+2020-05-10T23:11:31.0701363-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371972980
+2020-05-10T23:11:31.1342013-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371909883
+2020-05-10T23:11:31.1971414-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 479655193
+2020-05-10T23:11:31.2806683-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371963309
+2020-05-10T23:11:31.3449828-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372034247
+2020-05-10T23:11:31.4105255-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373506626
+2020-05-10T23:11:31.4777695-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 501460047
+2020-05-10T23:11:31.6036776-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372034247
+2020-05-10T23:11:31.6659245-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373996948
+2020-05-10T23:11:31.7617390-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:11:31.7619783-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371963309
+2020-05-10T23:11:31.7950055-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370013004
+2020-05-10T23:11:31.8883491-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370013004
+2020-05-10T23:11:31.9513723-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373996948
+2020-05-10T23:11:31.9895269-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375087474
+2020-05-10T23:11:32.1180321-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:11:32.0515929-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 487336014
+2020-05-10T23:11:32.2141441-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:11:32.2551674-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371892228
+2020-05-10T23:11:32.3229753-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371928840
+2020-05-10T23:11:32.3845379-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:11:32.4474100-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372392258
+2020-05-10T23:11:32.5159992-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:11:32.6356851-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375089222
+2020-05-10T23:11:32.6356899-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:11:32.6961371-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:11:32.7568565-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:11:32.8161044-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 506979944
+2020-05-10T23:11:32.8751762-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372034247
+2020-05-10T23:11:32.9926002-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373996948
+2020-05-10T23:11:33.0527515-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373504039
+2020-05-10T23:11:32.9928836-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:11:33.1100117-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372035326
+2020-05-10T23:11:33.1672777-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370013004
+2020-05-10T23:11:42.5387364-03:00 [ERR] (buying_order_server.Services.AbstractCronJob) E-mail 8 of 98 could not be sent to sandra@jnorberto.com.br
+2020-05-10T23:13:15.2931908-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 6.8356ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T23:15:19.7957721-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 4.9215ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T23:16:57.2266224-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371963309
+2020-05-10T23:16:57.3044264-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:16:57.3690369-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:16:57.4721516-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:16:57.5374660-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372779714
+2020-05-10T23:16:57.6024813-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370013004
+2020-05-10T23:16:57.6753978-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372825385
+2020-05-10T23:16:57.8202027-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371909883
+2020-05-10T23:16:57.8843115-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372035326
+2020-05-10T23:16:57.8847559-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:16:57.9771938-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373504039
+2020-05-10T23:16:58.0741043-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375546858
+2020-05-10T23:16:58.0763248-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 374041276
+2020-05-10T23:16:58.2079103-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371895532
+2020-05-10T23:16:58.2093821-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373996948
+2020-05-10T23:16:58.2767581-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375764988
+2020-05-10T23:16:58.3734727-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371972980
+2020-05-10T23:16:58.4077913-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 487336014
+2020-05-10T23:16:58.4721894-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371895532
+2020-05-10T23:16:58.5433493-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373996948
+2020-05-10T23:16:58.6349427-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372035326
+2020-05-10T23:16:58.6693074-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375087474
+2020-05-10T23:16:58.7427883-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 501460047
+2020-05-10T23:16:58.8155871-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370013004
+2020-05-10T23:16:58.8759563-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371963309
+2020-05-10T23:16:58.9384154-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 374041276
+2020-05-10T23:16:59.0014481-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:16:59.0639824-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 466398281
+2020-05-10T23:16:59.2278145-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373504039
+2020-05-10T23:16:59.2906254-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:16:59.3557516-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373996948
+2020-05-10T23:16:59.3247001-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:16:59.3228594-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371928840
+2020-05-10T23:16:59.5044204-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371972980
+2020-05-10T23:16:59.5062240-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:16:59.5641259-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371892228
+2020-05-10T23:16:59.5973940-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372392258
+2020-05-10T23:16:59.6574232-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375087474
+2020-05-10T23:16:59.7184082-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:16:59.7767786-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372034247
+2020-05-10T23:16:59.8364800-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:16:59.8964492-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:16:59.9773693-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 425517245
+2020-05-10T23:17:00.0078576-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:17:00.1180582-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:17:00.1188685-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:17:00.2274827-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:17:00.3120355-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370013004
+2020-05-10T23:17:00.2560037-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375089222
+2020-05-10T23:17:00.3963347-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372034247
+2020-05-10T23:17:00.3963347-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 506979944
+2020-05-10T23:18:33.7928314-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 5.7622ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T23:19:14.7899027-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 10.8995ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T23:19:41.8495832-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375087474
+2020-05-10T23:19:41.9142892-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373504039
+2020-05-10T23:19:42.0173396-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:19:42.1057205-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 479655193
+2020-05-10T23:19:42.1713166-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372825385
+2020-05-10T23:19:42.2387861-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371972980
+2020-05-10T23:19:42.3053017-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371909883
+2020-05-10T23:19:42.4146586-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:19:42.4506144-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372779714
+2020-05-10T23:19:42.5186009-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371891397
+2020-05-10T23:19:42.5886144-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372035326
+2020-05-10T23:19:42.6607416-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 374041276
+2020-05-10T23:19:42.7285259-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372392258
+2020-05-10T23:19:42.7943733-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375764988
+2020-05-10T23:19:42.8567301-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371895532
+2020-05-10T23:19:42.9176462-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:19:42.9789888-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375087474
+2020-05-10T23:19:43.0409575-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372034247
+2020-05-10T23:19:43.1007979-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 466398281
+2020-05-10T23:19:43.1614089-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373504039
+2020-05-10T23:19:43.2309560-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 452697169
+2020-05-10T23:19:43.2910293-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 425517245
+2020-05-10T23:19:43.4098701-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 373996948
+2020-05-10T23:19:43.4107003-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371972980
+2020-05-10T23:19:43.4700441-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370316653
+2020-05-10T23:19:43.5315566-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 374041276
+2020-05-10T23:19:43.5898535-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 487336014
+2020-05-10T23:19:43.6509012-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 371892228
+2020-05-10T23:19:43.7160850-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:19:43.7765339-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372035326
+2020-05-10T23:19:43.8377989-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:19:43.8953424-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:19:44.0113710-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:19:44.0118713-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:19:44.0703830-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:19:44.1297683-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:19:44.3225004-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372034247
+2020-05-10T23:19:44.2089574-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 372035326
+2020-05-10T23:19:44.5135748-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 370013004
+2020-05-10T23:19:44.3520713-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:19:44.2666548-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 501460047
+2020-05-10T23:19:44.5137251-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 375089222
+2020-05-10T23:19:44.4310214-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 506979944
+2020-05-10T23:19:44.5705471-03:00 [ERR] (buying_order_server.Services.EcosysApi) An error occurred trying to fetch provider 394019121
+2020-05-10T23:19:53.7876947-03:00 [ERR] (buying_order_server.Services.AbstractCronJob) E-mail 8 of 97 could not be sent to sandra@jnorberto.com.br
+2020-05-10T23:20:22.2928492-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 19.2367ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'
+2020-05-10T23:21:29.7931293-03:00 [ERR] (Microsoft.Extensions.Diagnostics.HealthChecks.DefaultHealthCheckService) Health check "Google Ping" completed after 7.6887ms with status Unhealthy and '"Ping check status [TimedOut]. Host www.google.com did not respond within 300 ms."'

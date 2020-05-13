@@ -1,0 +1,108 @@
+2020-05-04T00:03:05.3204989-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T00:03:11.5423491-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/app-configuration   
+                                                     Responded with [200] in 364ms
+2020-05-04T00:03:22.5747105-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/app-configuration   
+                                                     Responded with [200] in 7ms
+2020-05-04T00:03:25.3447921-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/app-configuration   
+                                                     Responded with [200] in 8ms
+2020-05-04T00:03:35.3271401-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/app-configuration   
+                                                     Responded with [200] in 5ms
+2020-05-04T00:11:30.1508013-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T10:12:59.5275903-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T10:13:13.8292100-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 389ms
+2020-05-04T10:13:22.9954279-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 8ms
+2020-05-04T10:13:35.4084446-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 10ms
+2020-05-04T10:13:35.4397437-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 5ms
+2020-05-04T10:13:43.4927491-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 5ms
+2020-05-04T10:13:46.1341362-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 5ms
+2020-05-04T10:14:02.3088734-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 5ms
+2020-05-04T10:14:02.3863555-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 4ms
+2020-05-04T10:46:08.2033493-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T10:48:01.8925097-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: OPTIONS https localhost:5001/api/v1/execution-status-hub/negotiate ?negotiateVersion=1  
+                                                     Responded with [204] in 154ms
+2020-05-04T10:48:02.2696322-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 262ms
+2020-05-04T10:48:07.3587443-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: OPTIONS https localhost:5001/api/v1/execution-status-hub/negotiate ?negotiateVersion=1  
+                                                     Responded with [204] in 3ms
+2020-05-04T10:48:07.6032605-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 5ms
+2020-05-04T10:49:27.1216310-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T11:31:59.6929943-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T11:32:09.5952295-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: OPTIONS https localhost:5001/api/v1/execution-status-hub/negotiate ?negotiateVersion=1  
+                                                     Responded with [204] in 136ms
+2020-05-04T11:32:09.9365612-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 241ms
+2020-05-04T11:46:05.4599947-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T11:47:18.7485620-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T15:53:07.6556878-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:03:44.1218879-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:07:29.0325605-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:07:49.0221568-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:08:48.5353168-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:09:15.3437695-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:10:32.5570417-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:11:22.9692474-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:11:56.3547507-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:24:01.3444223-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:24:43.5478204-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:25:14.0844771-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:30:23.2886172-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:30:43.6420794-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:33:09.3695151-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:35:18.1022129-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:35:47.7091685-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:40:34.3619081-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:40:40.0225820-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: OPTIONS https localhost:5001/api/v1/execution-status-hub/negotiate ?negotiateVersion=1  
+                                                     Responded with [204] in 137ms
+2020-05-04T16:40:40.3584033-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 236ms
+2020-05-04T16:43:50.2118487-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:43:56.4721740-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: OPTIONS https localhost:5001/api/v1/execution-status-hub/negotiate ?negotiateVersion=1  
+                                                     Responded with [204] in 146ms
+2020-05-04T16:43:56.8058928-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 240ms
+2020-05-04T16:44:18.2460525-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:44:39.5320283-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: OPTIONS https localhost:5001/api/v1/execution-status-hub/negotiate ?negotiateVersion=1  
+                                                     Responded with [204] in 137ms
+2020-05-04T16:44:39.8796459-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 248ms
+2020-05-04T16:49:38.3318549-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-04T16:49:45.0195821-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: OPTIONS https localhost:5001/api/v1/execution-status-hub/negotiate ?negotiateVersion=1  
+                                                     Responded with [204] in 136ms
+2020-05-04T16:49:45.3619580-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 241ms
+2020-05-04T17:02:06.0175455-03:00 [INF] (buying_order_server.Program) Starting web host

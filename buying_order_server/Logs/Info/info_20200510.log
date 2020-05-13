@@ -1,0 +1,582 @@
+2020-05-10T11:21:59.0267730-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T11:39:59.6262913-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:39:59.7131089-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 330ms
+2020-05-10T11:40:09.9206823-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:40:10.3599165-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:42:24.0203123-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:42:24.4857076-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:42:33.3171534-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 5ms
+2020-05-10T11:44:15.8091329-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:44:18.8866805-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:44:19.1086872-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 6ms
+2020-05-10T11:44:35.8862886-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:44:36.3489132-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:44:36.9191572-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 4ms
+2020-05-10T11:45:13.9765856-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:45:14.4461483-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:45:14.6679613-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 4ms
+2020-05-10T11:46:47.2083457-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:46:47.6681279-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@CRRRIOUUUUUUUUUUUUUUUO!!!!!!!!!
+2020-05-10T11:46:47.8948417-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 4ms
+2020-05-10T11:49:13.0918050-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T11:57:51.6295734-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 321ms
+2020-05-10T11:59:33.7298426-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:02:43.3102016-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:03:15.6529672-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:05:16.4989140-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 320ms
+2020-05-10T12:08:41.5983534-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:08:43.0933143-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 508ms
+2020-05-10T12:13:03.5405086-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 4ms
+2020-05-10T12:16:07.0142356-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 5ms
+2020-05-10T12:16:20.8367513-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/start-agent   
+                                                     Responded with [404] in 13ms
+2020-05-10T12:17:51.0375939-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 4ms
+2020-05-10T12:17:53.0921456-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: POST https localhost:5001/api/v1/start-scheduler  {} 
+                                                     Responded with [404] in 5ms
+2020-05-10T12:18:17.7916113-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 3ms
+2020-05-10T12:18:19.0835629-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 50ms
+2020-05-10T12:18:49.8997615-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 3ms
+2020-05-10T12:26:19.9526484-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:27:28.2615021-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:27:33.6140562-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 246ms
+2020-05-10T12:28:58.4812413-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:29:03.1735394-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 245ms
+2020-05-10T12:33:06.4961096-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 217372ms
+2020-05-10T12:35:00.7989879-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:35:23.9567212-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 10178ms
+2020-05-10T12:42:39.1468715-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:43:35.0030612-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 325ms
+2020-05-10T12:43:40.3530572-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 2849ms
+2020-05-10T12:43:53.7853954-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:53:47.7556450-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:56:32.3121169-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T12:57:21.5473008-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T20:39:42.6699716-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T20:40:33.0508751-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 361ms
+2020-05-10T20:40:38.5622508-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 56ms
+2020-05-10T21:30:02.7509411-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T21:30:37.7795786-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 375ms
+2020-05-10T21:30:39.4752368-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 51ms
+2020-05-10T21:32:14.5389049-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T22:12:40.5657941-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T22:13:00.8685918-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 167ms
+2020-05-10T22:14:31.5475483-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T22:15:37.5700646-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 317ms
+2020-05-10T22:16:02.1429679-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 5ms
+2020-05-10T22:29:35.0763685-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T22:29:43.0929597-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 176ms
+2020-05-10T22:29:48.6579035-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 145ms
+2020-05-10T22:42:36.9296711-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T22:42:41.6741734-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 136ms
+2020-05-10T22:42:41.9620069-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 192ms
+2020-05-10T22:44:17.1960541-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 1ms
+2020-05-10T22:50:29.8408894-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 1ms
+2020-05-10T22:50:35.1544127-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 1ms
+2020-05-10T22:50:45.6068329-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 4ms
+2020-05-10T22:50:47.7121916-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 51ms
+2020-05-10T22:51:15.0181088-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 1ms
+2020-05-10T22:51:18.0902567-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 4ms
+2020-05-10T22:53:39.5588618-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T22:53:45.2964385-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 151ms
+2020-05-10T22:53:45.5728428-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 191ms
+2020-05-10T22:53:53.4106190-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 34ms
+2020-05-10T22:54:28.3488959-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 3ms
+2020-05-10T22:55:00.6051898-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T22:56:19.6814351-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T22:56:23.8454857-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 129ms
+2020-05-10T22:56:24.1112594-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 189ms
+2020-05-10T22:56:32.6707989-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 34ms
+2020-05-10T22:56:40.1681299-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 1ms
+2020-05-10T22:56:40.4139214-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 4ms
+2020-05-10T22:58:06.4356320-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 1ms
+2020-05-10T22:58:06.7210395-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 5ms
+2020-05-10T22:58:58.2092620-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 2ms
+2020-05-10T22:58:58.4910519-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 4ms
+2020-05-10T22:59:01.5038073-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 0ms
+2020-05-10T22:59:01.7694532-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 3ms
+2020-05-10T22:59:09.9044805-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 0ms
+2020-05-10T22:59:10.1683885-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 3ms
+2020-05-10T23:01:51.0088459-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:01:59.1808615-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 178ms
+2020-05-10T23:02:03.6741318-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 14ms
+2020-05-10T23:02:04.0663694-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 140ms
+2020-05-10T23:02:14.4899660-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 1ms
+2020-05-10T23:02:14.7446034-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 4ms
+2020-05-10T23:05:20.0564874-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:05:33.0983188-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 170ms
+2020-05-10T23:08:06.6133196-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:08:10.2477951-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:08:10.2515266-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:08:18.6460706-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Initializing
+2020-05-10T23:08:18.7101321-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:08:18.7925805-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 177ms
+2020-05-10T23:08:37.7871023-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Initializing
+2020-05-10T23:08:37.7911584-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:08:37.7915867-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 5ms
+2020-05-10T23:08:47.8531741-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Initializing
+2020-05-10T23:09:21.8074650-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:09:28.4315342-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:09:28.4371549-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:09:32.6280244-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Initializing
+2020-05-10T23:09:32.6912788-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed SchedulerRunning
+2020-05-10T23:09:32.7788507-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 179ms
+2020-05-10T23:09:46.2364518-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP connected
+2020-05-10T23:09:46.6936343-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP authenticated
+2020-05-10T23:09:46.6981443-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 1 of 86 to ana.cadence@gmail.com
+2020-05-10T23:09:46.7005058-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-05-10T23:09:47.6025646-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 2 of 86 to d.moser@terra.com.br
+2020-05-10T23:09:47.6040156-03:00 [INF] (buying_order_server.Services.AbstractCronJob) CRON job 0/59 * * * * * cycle 1 successfully executed!
+2020-05-10T23:09:47.6128567-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/stop-scheduler   
+                                                     Responded with [200] in 213ms
+2020-05-10T23:11:19.2393196-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:11:22.2670032-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:11:22.2703773-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:11:24.5206973-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Initializing
+2020-05-10T23:11:24.5841005-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed SchedulerRunning
+2020-05-10T23:11:24.6692044-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 177ms
+2020-05-10T23:11:36.0729417-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP connected
+2020-05-10T23:11:36.5316118-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP authenticated
+2020-05-10T23:11:36.5359650-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 1 of 98 to ana.cadence@gmail.com
+2020-05-10T23:11:36.5376353-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-05-10T23:11:37.3801720-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 1 of 98 successfully sent to ana.cadence@gmail.com
+2020-05-10T23:11:37.3819442-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 2 of 98 to d.moser@terra.com.br
+2020-05-10T23:11:37.3827901-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to d.moser@terra.com.br
+2020-05-10T23:11:38.1274469-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 2 of 98 successfully sent to d.moser@terra.com.br
+2020-05-10T23:11:38.1293350-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 3 of 98 to sandra@jnorberto.com.br
+2020-05-10T23:11:38.1300705-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:11:38.8706714-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 3 of 98 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:11:38.8724952-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 4 of 98 to sandra@jnorberto.com.br
+2020-05-10T23:11:38.8733149-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:11:39.6148980-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 4 of 98 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:11:39.6167452-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 5 of 98 to d.moser@terra.com.br
+2020-05-10T23:11:39.6176441-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to d.moser@terra.com.br
+2020-05-10T23:11:40.3556714-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 5 of 98 successfully sent to d.moser@terra.com.br
+2020-05-10T23:11:40.3573339-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 6 of 98 to vendas.vipsc2005@gmail.com
+2020-05-10T23:11:40.3581461-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:11:41.1070253-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 6 of 98 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:11:41.1086970-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 7 of 98 to sandra@jnorberto.com.br
+2020-05-10T23:11:41.1095503-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:11:41.8470229-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 7 of 98 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:11:41.8486599-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 8 of 98 to sandra@jnorberto.com.br
+2020-05-10T23:11:41.8494390-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:11:42.5401890-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 9 of 98 to sandra@jnorberto.com.br
+2020-05-10T23:11:42.5413931-03:00 [INF] (buying_order_server.Services.AbstractCronJob) CRON job 0/59 * * * * * cycle 1 successfully executed!
+2020-05-10T23:11:42.5482185-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:11:42.5516634-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/stop-scheduler   
+                                                     Responded with [200] in 226ms
+2020-05-10T23:13:00.3914512-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 16ms
+2020-05-10T23:13:00.7668675-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 141ms
+2020-05-10T23:14:27.1759355-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:14:30.2169626-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:14:30.2202255-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:14:39.3417215-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 136ms
+2020-05-10T23:14:39.6418067-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 190ms
+2020-05-10T23:16:43.8673797-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:16:46.9159651-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:16:46.9196611-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:16:46.9210118-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@
+2020-05-10T23:16:51.5420947-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Initializing
+2020-05-10T23:16:51.6067227-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed SchedulerRunning
+2020-05-10T23:16:51.6946501-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 181ms
+2020-05-10T23:17:02.4377087-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP connected
+2020-05-10T23:17:02.8963141-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP authenticated
+2020-05-10T23:17:02.9005438-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 1 of 91 to ana.cadence@gmail.com
+2020-05-10T23:17:02.9026603-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-05-10T23:17:03.7285231-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 1 of 91 successfully sent to ana.cadence@gmail.com
+2020-05-10T23:17:03.7302246-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 2 of 91 to d.moser@terra.com.br
+2020-05-10T23:17:03.7325625-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to d.moser@terra.com.br
+2020-05-10T23:17:04.4689661-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 2 of 91 successfully sent to d.moser@terra.com.br
+2020-05-10T23:17:04.4706650-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 3 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:04.4714902-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:05.2043659-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 3 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:05.2061622-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 4 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:05.2069299-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:05.9484771-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 4 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:05.9504619-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 5 of 91 to d.moser@terra.com.br
+2020-05-10T23:17:05.9514294-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to d.moser@terra.com.br
+2020-05-10T23:17:06.6872497-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 5 of 91 successfully sent to d.moser@terra.com.br
+2020-05-10T23:17:06.6888857-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 6 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:06.6898422-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:07.4276096-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 6 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:07.4293016-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 7 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:07.4301501-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:08.1685582-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 7 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:08.1701168-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 8 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:08.1710328-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:08.9045622-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 8 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:08.9062777-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 9 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:08.9084011-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:09.6433825-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 9 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:09.6450588-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 10 of 91 to d.moser@terra.com.br
+2020-05-10T23:17:09.6459064-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to d.moser@terra.com.br
+2020-05-10T23:17:10.3751599-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 10 of 91 successfully sent to d.moser@terra.com.br
+2020-05-10T23:17:10.3769848-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 11 of 91 to uerba.rep@terra.com.br
+2020-05-10T23:17:10.3779314-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to uerba.rep@terra.com.br
+2020-05-10T23:17:11.1121538-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 11 of 91 successfully sent to uerba.rep@terra.com.br
+2020-05-10T23:17:11.1143373-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 12 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:11.1154050-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:11.8433026-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 12 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:11.8455488-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 13 of 91 to alexandre.abrepresenta@gmail.com
+2020-05-10T23:17:11.8467102-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-05-10T23:17:12.5807993-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 13 of 91 successfully sent to alexandre.abrepresenta@gmail.com
+2020-05-10T23:17:12.5824483-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 14 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:12.5839846-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:13.3204775-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 14 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:13.3224887-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 15 of 91 to d.moser@terra.com.br
+2020-05-10T23:17:13.3242346-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to d.moser@terra.com.br
+2020-05-10T23:17:14.0606051-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 15 of 91 successfully sent to d.moser@terra.com.br
+2020-05-10T23:17:14.0619898-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 16 of 91 to willian.lima@interlight.com.br
+2020-05-10T23:17:14.0636544-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to willian.lima@interlight.com.br
+2020-05-10T23:17:14.8000533-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 16 of 91 successfully sent to willian.lima@interlight.com.br
+2020-05-10T23:17:14.8018073-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 17 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:14.8030903-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:15.5381607-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 17 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:15.5399096-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 18 of 91 to ana.cadence@gmail.com
+2020-05-10T23:17:15.5409007-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-05-10T23:17:16.2766587-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 18 of 91 successfully sent to ana.cadence@gmail.com
+2020-05-10T23:17:16.2782892-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 19 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:16.2790540-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:17.0158537-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 19 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:17.0174721-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 20 of 91 to vendasemporiodaluz@gmail.com
+2020-05-10T23:17:17.0182704-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-05-10T23:17:17.7584281-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 20 of 91 successfully sent to vendasemporiodaluz@gmail.com
+2020-05-10T23:17:17.7604554-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 21 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:17.7612653-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:18.4929692-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 21 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:18.4945891-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 22 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:18.4954198-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:19.2284980-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 22 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:19.2303416-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 23 of 91 to impacta@impactarep.com.br
+2020-05-10T23:17:19.2317526-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to impacta@impactarep.com.br
+2020-05-10T23:17:19.9635738-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 23 of 91 successfully sent to impacta@impactarep.com.br
+2020-05-10T23:17:19.9656414-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 24 of 91 to z.weber@uol.com.br
+2020-05-10T23:17:19.9664720-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-05-10T23:17:20.7032413-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 24 of 91 successfully sent to z.weber@uol.com.br
+2020-05-10T23:17:20.7048735-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 25 of 91 to z.weber@uol.com.br
+2020-05-10T23:17:20.7056561-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-05-10T23:17:21.4463617-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 25 of 91 successfully sent to z.weber@uol.com.br
+2020-05-10T23:17:21.4484232-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 26 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:21.4501753-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:22.1808852-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 26 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:22.1822993-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 27 of 91 to ana.cadence@gmail.com
+2020-05-10T23:17:22.1833706-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-05-10T23:17:22.9246105-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 27 of 91 successfully sent to ana.cadence@gmail.com
+2020-05-10T23:17:22.9261868-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 28 of 91 to alexandre.abrepresenta@gmail.com
+2020-05-10T23:17:22.9270371-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-05-10T23:17:23.6748890-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 28 of 91 successfully sent to alexandre.abrepresenta@gmail.com
+2020-05-10T23:17:23.6765138-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 29 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:23.6774256-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:24.4080486-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 29 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:24.4095314-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 30 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:24.4109014-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:25.1389919-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 30 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:25.1405861-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 31 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:25.1413205-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:25.8762861-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 31 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:25.8777862-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 32 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:25.8787428-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:26.6111788-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 32 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:26.6132870-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 33 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:26.6142388-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:27.3523900-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 33 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:27.3540799-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 34 of 91 to vendasemporiodaluz@gmail.com
+2020-05-10T23:17:27.3548435-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-05-10T23:17:28.0920102-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 34 of 91 successfully sent to vendasemporiodaluz@gmail.com
+2020-05-10T23:17:28.0935530-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 35 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:28.0956790-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:28.8321612-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 35 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:28.8338220-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 36 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:28.8345876-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:29.5716513-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 36 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:29.5733187-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 37 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:29.5742144-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:30.3073854-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 37 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:30.3090095-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 38 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:30.3098350-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:31.0439980-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 38 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:31.0456218-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 39 of 91 to cordeirorepresenta@gmail.com
+2020-05-10T23:17:31.0476080-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresenta@gmail.com
+2020-05-10T23:17:31.7844954-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 39 of 91 successfully sent to cordeirorepresenta@gmail.com
+2020-05-10T23:17:31.7859795-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 40 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:31.7869431-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:32.5199639-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 40 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:32.5213450-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 41 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:32.5222791-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:33.2522955-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 41 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:33.2537599-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 42 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:33.2546914-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:33.9884439-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 42 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:33.9902035-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 43 of 91 to elis@julfe.com.br
+2020-05-10T23:17:33.9910650-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to elis@julfe.com.br
+2020-05-10T23:17:34.7239991-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 43 of 91 successfully sent to elis@julfe.com.br
+2020-05-10T23:17:34.7256896-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 44 of 91 to vendas@bellaitalia.com.br
+2020-05-10T23:17:34.7264673-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-05-10T23:17:35.4616401-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 44 of 91 successfully sent to vendas@bellaitalia.com.br
+2020-05-10T23:17:35.4632287-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 45 of 91 to eletrohil.michelle@gmail.com
+2020-05-10T23:17:35.4642171-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to eletrohil.michelle@gmail.com
+2020-05-10T23:17:36.1971472-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 45 of 91 successfully sent to eletrohil.michelle@gmail.com
+2020-05-10T23:17:36.1987722-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 46 of 91 to impacta@impactarep.com.br
+2020-05-10T23:17:36.1996407-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to impacta@impactarep.com.br
+2020-05-10T23:17:36.9281756-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 46 of 91 successfully sent to impacta@impactarep.com.br
+2020-05-10T23:17:36.9299529-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 47 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:36.9307868-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:37.6643989-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 47 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:37.6661349-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 48 of 91 to atendimento@sulrepresentacao.com.br
+2020-05-10T23:17:37.6671993-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to atendimento@sulrepresentacao.com.br
+2020-05-10T23:17:38.4008020-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 48 of 91 successfully sent to atendimento@sulrepresentacao.com.br
+2020-05-10T23:17:38.4024331-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 49 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:38.4047318-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:39.1362422-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 49 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:39.1379421-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 50 of 91 to vendas@barthelrepresentacoes.com.br
+2020-05-10T23:17:39.1391039-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@barthelrepresentacoes.com.br
+2020-05-10T23:17:39.8722907-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 50 of 91 successfully sent to vendas@barthelrepresentacoes.com.br
+2020-05-10T23:17:39.8739920-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 51 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:39.8752988-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:40.6081990-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 51 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:40.6100276-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 52 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:40.6108687-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:41.3490591-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 52 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:41.3507473-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 53 of 91 to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:41.3518603-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:42.0798544-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 53 of 91 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:17:42.0816022-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 54 of 91 to alexandre.abrepresenta@gmail.com
+2020-05-10T23:17:42.0832648-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-05-10T23:17:42.8150892-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 54 of 91 successfully sent to alexandre.abrepresenta@gmail.com
+2020-05-10T23:17:42.8166850-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 55 of 91 to eletrohil.michelle@gmail.com
+2020-05-10T23:17:42.8175254-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to eletrohil.michelle@gmail.com
+2020-05-10T23:17:43.5479233-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 55 of 91 successfully sent to eletrohil.michelle@gmail.com
+2020-05-10T23:17:43.5494784-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 56 of 91 to sandra@jnorberto.com.br
+2020-05-10T23:17:43.5503300-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:17:44.2880877-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 56 of 91 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:17:44.2895901-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 57 of 91 to vendas@bellaitalia.com.br
+2020-05-10T23:17:44.2902033-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-05-10T23:17:45.0277695-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 57 of 91 successfully sent to vendas@bellaitalia.com.br
+2020-05-10T23:17:45.0296972-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 58 of 91 to vendas@barthelrepresentacoes.com.br
+2020-05-10T23:17:45.0304863-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@barthelrepresentacoes.com.br
+2020-05-10T23:17:45.7673728-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 58 of 91 successfully sent to vendas@barthelrepresentacoes.com.br
+2020-05-10T23:17:45.7689578-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 59 of 91 to d.moser@terra.com.br
+2020-05-10T23:17:45.7699405-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to d.moser@terra.com.br
+2020-05-10T23:17:45.9221225-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Finalizing
+2020-05-10T23:17:45.9336457-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@
+2020-05-10T23:17:45.9518205-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Offline
+2020-05-10T23:18:11.8806875-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:18:14.9442652-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:18:14.9473160-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:18:14.9485808-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@
+2020-05-10T23:19:29.7906195-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:19:34.4234489-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:19:34.4264442-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:19:36.0961822-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Initializing
+2020-05-10T23:19:36.1590572-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed SchedulerRunning
+2020-05-10T23:19:36.2435779-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[127.0.0.1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 176ms
+2020-05-10T23:19:47.3240480-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP connected
+2020-05-10T23:19:47.7845164-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP authenticated
+2020-05-10T23:19:47.7883047-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 1 of 97 to ana.cadence@gmail.com
+2020-05-10T23:19:47.7899663-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-05-10T23:19:48.6320044-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 1 of 97 successfully sent to ana.cadence@gmail.com
+2020-05-10T23:19:48.6338457-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 2 of 97 to d.moser@terra.com.br
+2020-05-10T23:19:48.6346045-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to d.moser@terra.com.br
+2020-05-10T23:19:49.3790008-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 2 of 97 successfully sent to d.moser@terra.com.br
+2020-05-10T23:19:49.3806969-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 3 of 97 to sandra@jnorberto.com.br
+2020-05-10T23:19:49.3819848-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:19:50.1268949-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 3 of 97 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:19:50.1286746-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 4 of 97 to sandra@jnorberto.com.br
+2020-05-10T23:19:50.1300564-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:19:50.8775614-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 4 of 97 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:19:50.8790811-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 5 of 97 to d.moser@terra.com.br
+2020-05-10T23:19:50.8804662-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to d.moser@terra.com.br
+2020-05-10T23:19:51.6178534-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 5 of 97 successfully sent to d.moser@terra.com.br
+2020-05-10T23:19:51.6195486-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 6 of 97 to vendas.vipsc2005@gmail.com
+2020-05-10T23:19:51.6203775-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-05-10T23:19:52.3617185-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 6 of 97 successfully sent to vendas.vipsc2005@gmail.com
+2020-05-10T23:19:52.3633432-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 7 of 97 to sandra@jnorberto.com.br
+2020-05-10T23:19:52.3641443-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:19:53.1024555-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 7 of 97 successfully sent to sandra@jnorberto.com.br
+2020-05-10T23:19:53.1040922-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 8 of 97 to sandra@jnorberto.com.br
+2020-05-10T23:19:53.1052237-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-05-10T23:19:53.7893632-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 9 of 97 to sandra@jnorberto.com.br
+2020-05-10T23:19:53.7909231-03:00 [INF] (buying_order_server.Services.AbstractCronJob) CRON job 0/59 * * * * * cycle 1 successfully executed!
+2020-05-10T23:19:53.7981136-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:19:53.8007954-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST https localhost:5001/api/v1/app-management/stop-scheduler   
+                                                     Responded with [200] in 224ms
+2020-05-10T23:20:37.4554619-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:20:40.3787476-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:20:40.3823867-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:20:45.9744499-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 138ms
+2020-05-10T23:20:46.2738112-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET https localhost:5001/api/v1/app-configuration   
+                                                     Responded with [200] in 188ms
+2020-05-10T23:21:39.1167177-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:21:42.1705039-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:21:42.1734411-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:21:42.1748671-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@
+2020-05-10T23:21:42.1755937-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Execution status subscriber initialized.
+2020-05-10T23:21:42.1894549-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Execution status hub message being send
+2020-05-10T23:21:42.1924361-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@
+2020-05-10T23:21:42.1932707-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@Status Hub connection stabilished
+2020-05-10T23:21:42.1961687-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-05-10T23:22:08.4351331-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:22:12.6749209-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:22:12.6781474-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:22:12.6796425-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@
+2020-05-10T23:22:12.6830437-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@
+2020-05-10T23:22:12.6842327-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@Status Hub connection stabilished
+2020-05-10T23:22:12.6881369-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-05-10T23:22:50.9722251-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-05-10T23:22:54.0138337-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:22:54.0171319-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-05-10T23:22:54.0192243-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@
+2020-05-10T23:22:54.0208058-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@
+2020-05-10T23:22:54.0217620-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) @@@@@@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@Status Hub connection stabilished
+2020-05-10T23:23:08.4616267-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
