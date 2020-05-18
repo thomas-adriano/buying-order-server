@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Text.Json;
 using buying_order_server.Contracts;
 using System;
+using System.Threading;
 
 namespace buying_order_server.Services
 {
@@ -19,9 +20,14 @@ namespace buying_order_server.Services
             _logger = logger;
         }
 
-        public async Task<IEnumerable<BuyingOrdersResponse>> GetBuyingOrdersAsync()
+        public async Task<IEnumerable<BuyingOrdersResponse>> GetBuyingOrdersAsync(CancellationToken cancellationToken)
         {
-            var httpResponse = await _httpClient.GetAsync("/api/ordens-de-compra?situacoes=0");
+            if (cancellationToken.IsCancellationRequested)
+            {
+                return null;
+            }
+
+            var httpResponse = await _httpClient.GetAsync("/api/ordens-de-compra?situacoes=0", cancellationToken);
 
             if (!httpResponse.IsSuccessStatusCode)
             {
@@ -35,11 +41,16 @@ namespace buying_order_server.Services
             return data;
         }
 
-        public async Task<ProviderResponse> GetProviderByIdAsync(string providerId)
+        public async Task<ProviderResponse> GetProviderByIdAsync(string providerId, CancellationToken cancellationToken)
         {
+            if (cancellationToken.IsCancellationRequested)
+            {
+                return null;
+            }
+
             try
             {
-                var httpResponse = await _httpClient.GetAsync($"/api/fornecedores/{providerId}");
+                var httpResponse = await _httpClient.GetAsync($"/api/fornecedores/{providerId}", cancellationToken);
                 if (!httpResponse.IsSuccessStatusCode)
                 {
                     _logger.Log(LogLevel.Warning, $"[{httpResponse.StatusCode}] An error occured while requesting external api.");

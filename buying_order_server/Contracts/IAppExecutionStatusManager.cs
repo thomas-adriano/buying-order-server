@@ -5,7 +5,7 @@ using System;
 
 namespace buying_order_server.Contracts
 {
-    public interface IAppExecutionStatusManager
+    public interface IAppExecutionStatusManager: IDisposable
     {
         public AppExecutionStatuses GetExecutionStatus();
 

@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace buying_order_server.Services
@@ -23,26 +24,39 @@ namespace buying_order_server.Services
             _ecosysApi = ecosysApi;
         }
 
-        public async Task<IEnumerable<BuyingOrder>> getBuyingOrdersAsync()
+        public async Task<IEnumerable<BuyingOrder>> getBuyingOrdersAsync(CancellationToken cancellationToken)
         {
-            var buyingOrders = await _ecosysApi.GetBuyingOrdersAsync();
+            if (cancellationToken.IsCancellationRequested)
+            {
+                return null;
+            }
+
+            var buyingOrders = await _ecosysApi.GetBuyingOrdersAsync(cancellationToken);
             var ordersWithProviderId = buyingOrders.Where((order) =>
             {
                 return !String.IsNullOrEmpty(order.IdContato);
             });
 
-            var providers = await Task.WhenAll(
+            IEnumerable<BuyingOrder> ordersAndProviders;
+
+            ordersAndProviders = await Task.Run(async () =>
+            {
+                var providers = await Task.WhenAll(
                 ordersWithProviderId
-                    .Select(e => _ecosysApi.GetProviderByIdAsync(e.IdContato))
+                    .Select(e => _ecosysApi.GetProviderByIdAsync(e.IdContato, cancellationToken))
                     .Where(e => e != null)
                 );
-            var ordersAndProviders = providers
+
+                return providers
                 .Where(o => o != null && !String.IsNullOrEmpty(o.Email))
                 .Select(p =>
                 {
                     var order = ordersWithProviderId.Where(o => o.IdContato == p.Id).First();
                     return new BuyingOrder { Provider = p, Order = ordersWithProviderId.Where(o => o.IdContato == p.Id).First() };
                 });
+            }
+            , cancellationToken);
+
             return ordersAndProviders;
         }
     }

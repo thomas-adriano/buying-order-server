@@ -31,10 +31,11 @@ namespace buying_order_server.Services
             _startJobCancellationTokenSource = new CancellationTokenSource();
             _startJobCancellationToken = _startJobCancellationTokenSource.Token;
             _logger.LogDebug($"starting Cron Job {_cronPattern}");
-            cancellationToken.Register(() =>
+            _startJobCancellationToken.Register(async () =>
             {
                 _startJobCancellationTokenSource.Cancel();
                 _logger.LogInformation("Email sending routine cancelled by the user");
+                await StopWork();
                 _executionStatusManger.ChangeExecutionStatus(DTO.AppExecutionStatuses.Online);
             });
             await ScheduleJob(_cronPattern, _startJobCancellationToken);
@@ -45,7 +46,7 @@ namespace buying_order_server.Services
             _logger.LogDebug($"stopping Cron Job {_cronPattern}");
             _startJobCancellationTokenSource.Cancel();
             _timer?.Stop();
-            await Task.CompletedTask;
+
             _executionStatusManger.ChangeExecutionStatus(DTO.AppExecutionStatuses.Online);
         }
 
@@ -56,10 +57,12 @@ namespace buying_order_server.Services
 
         private async Task ScheduleJob(string cronPattern, CancellationToken cancellationToken)
         {
-            if (!cancellationToken.IsCancellationRequested)
+            if (cancellationToken.IsCancellationRequested)
             {
-                await DoWork(cancellationToken);
+                return;
             }
+
+            await DoWork(cancellationToken);
             _expression = CronExpression.Parse(cronPattern, CronFormat.IncludeSeconds);
             var next = _expression.GetNextOccurrence(DateTimeOffset.Now, TimeZoneInfo.Local);
             if (next.HasValue)
@@ -84,10 +87,9 @@ namespace buying_order_server.Services
                         await DoWork(cancellationToken);
                     }
 
-                    if (!cancellationToken.IsCancellationRequested)
-                    {
-                        await ScheduleJob(cronPattern, cancellationToken);    // reschedule next
-                    }
+
+                    await ScheduleJob(cronPattern, cancellationToken);    // reschedule next
+
                 };
                 _timer.Start();
             }
@@ -95,6 +97,7 @@ namespace buying_order_server.Services
         }
 
         protected abstract Task DoWork(CancellationToken cancellationToken);
+        protected abstract Task StopWork();
         public abstract Task<string> CronPattern();
     }
 }

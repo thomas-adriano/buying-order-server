@@ -50,6 +50,7 @@ namespace buying_order_server.Services
         private IConfiguration _config;
         private int _executionCount = 0;
         private IAppExecutionStatusManager _executionStatusManger;
+        private SmtpClient _smtpClient;
 
 
         public EmailCronJob(ILogger<AbstractCronJob> logger, IAppConfigurationRepository appConfigsRepo, IBuyingOrdersManager ordersManager, IConfiguration config, IAppExecutionStatusManager executionStatusManger) : base(logger, executionStatusManger)
@@ -65,6 +66,24 @@ namespace buying_order_server.Services
             _logger.LogDebug("executing email sending routine");
             await StartScheduler(cancellationToken);
         }
+        protected override async Task StopWork()
+        {
+            if (_smtpClient != null)
+            {
+                try
+                {
+                    await _smtpClient.DisconnectAsync(true);
+                    _smtpClient.Dispose();
+                    _smtpClient = null;
+                }
+                catch (Exception e)
+                {
+                    _logger.LogError("error trying to disconnect smpt client");
+                }
+
+            }
+            _executionCount = 0;
+        }
 
         public override async Task<string> CronPattern()
         {
@@ -73,16 +92,19 @@ namespace buying_order_server.Services
 
         private async Task StartScheduler(CancellationToken cancellationToken)
         {
+            if (cancellationToken.IsCancellationRequested)
+            {
+                return;
+            }
             _dbConfigs = await _appConfigsRepo.GetLastAsync();
             var smtpCfg = new SmtpConfigs { smtpHost = _dbConfigs.AppSMTPAddress, smtpPort = _dbConfigs.AppSMTPPort, useSSL = _dbConfigs.AppSMTPSecure, smtpUser = _dbConfigs.AppEmailUser, smtpPass = _dbConfigs.AppEmailPassword };
             var emailSchedulerCfg = new EmailSchedulerConfigs { cron = _dbConfigs.AppCronPattern, smtpConfigs = smtpCfg };
-            if (cancellationToken.IsCancellationRequested)
+            _executionStatusManger.ChangeExecutionStatus(DTO.AppExecutionStatuses.SchedulerRunning);
+            var ordersAndProviders = await _ordersManager.getBuyingOrdersAsync(cancellationToken);
+            if (ordersAndProviders == null)
             {
-                _executionStatusManger.ChangeExecutionStatus(DTO.AppExecutionStatuses.Online);
                 return;
             }
-            _executionStatusManger.ChangeExecutionStatus(DTO.AppExecutionStatuses.SchedulerRunning);
-            var ordersAndProviders = await _ordersManager.getBuyingOrdersAsync();
             emailSchedulerCfg.emailConfigs = ordersAndProviders.Select(e => new EmailConfigs
             {
                 htmlContent = _dbConfigs.AppEmailHtml,
@@ -103,6 +125,7 @@ namespace buying_order_server.Services
             int emailSendingCounter = 1;
             using (var smtpClient = new SmtpClient())
             {
+                _smtpClient = smtpClient;
                 smtpClient.Connect(smtpCfgs.smtpHost, smtpCfgs.smtpPort, smtpCfgs.useSSL);
                 _logger.LogInformation($"SMTP connected");
                 smtpClient.Authenticate(smtpCfgs.smtpUser, smtpCfgs.smtpPass);
@@ -130,6 +153,7 @@ namespace buying_order_server.Services
                 }
                 await smtpClient.DisconnectAsync(true);
             }
+            _smtpClient = null;
 
         }
 
