@@ -59,7 +59,7 @@ namespace buying_order_server.Data.Repository
                             @AppEmailHtml, @AppEmailName, @AppEmailPassword, @AppEmailSubject,
                             @AppEmailText, @AppEmailUser, @AppNotificationTriggerDelta,
                             @AppSMTPPort, @AppSMTPSecure, @AppSMTPAddress)";
-
+               
             var parameters = new DynamicParameters();
             parameters.Add("AppBlacklist", entity.AppBlacklist);
             parameters.Add("AppCronPattern", entity.AppCronPattern);
