@@ -1,5 +1,6 @@
 ﻿using buying_order_server.Contracts;
 using buying_order_server.Data.Entity;
+using buying_order_server.DTO.Response;
 using buying_order_server.Exceptions;
 using MailKit.Net.Smtp;
 using Microsoft.Extensions.Configuration;
@@ -8,6 +9,7 @@ using MimeKit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -105,15 +107,24 @@ namespace buying_order_server.Services
             {
                 return;
             }
-            emailSchedulerCfg.emailConfigs = ordersAndProviders.Select(e => new EmailConfigs
-            {
-                htmlContent = _dbConfigs.AppEmailHtml,
-                textContent = _dbConfigs.AppEmailText,
-                subject = _dbConfigs.AppEmailSubject,
-                senderName = _dbConfigs.AppEmailName,
-                senderEmail = _dbConfigs.AppEmailFrom,
-                destinationEmail = e.Provider.Email,
-            }
+
+
+
+            emailSchedulerCfg.emailConfigs = ordersAndProviders.Select(e =>
+              {
+                  var textContent = this.interpolateVariables(_dbConfigs.AppEmailText, e.Order);
+                  var htmlContent = this.interpolateVariables(_dbConfigs.AppEmailHtml, e.Order);
+                  var subject = this.interpolateVariables(_dbConfigs.AppEmailSubject, e.Order);
+                  return new EmailConfigs
+                  {
+                      htmlContent = htmlContent,
+                      textContent = textContent,
+                      subject = subject,
+                      senderName = _dbConfigs.AppEmailName,
+                      senderEmail = _dbConfigs.AppEmailFrom,
+                      destinationEmail = e.Provider.Email
+                  };
+              }
             );
             await StartSendingEmailsAsync(emailSchedulerCfg.smtpConfigs, emailSchedulerCfg.emailConfigs, cancellationToken);
             _executionCount++;
@@ -145,6 +156,7 @@ namespace buying_order_server.Services
                     catch (Exception e)
                     {
                         _logger.LogError($"E-mail {emailSendingCounter} of {emailCfgs.Count()} could not be sent to {cfg.destinationEmail}", e);
+                        throw e;
                     }
                     finally
                     {
@@ -182,6 +194,22 @@ namespace buying_order_server.Services
             {
                 throw new AppEmailException($"There was an error trying to send e-mail to {configs.destinationEmail}", e);
             }
+        }
+
+        private string interpolateVariables(string content, BuyingOrdersResponse order)
+        {
+            var ret = new Regex(@"\$\{providerName\}")
+                .Replace(content, order.NomeContato);
+            ret = new Regex(@"\$\{orderNumber\}")
+                .Replace(ret, order.NumeroPedido);
+            ret = new Regex(@"\$\{orderDate\}")
+                .Replace(ret, order.Data);
+            ret = new Regex(@"\$\{previewOrderDate\}")
+                .Replace(ret, order.DataPrevista);
+            ret = new Regex(@"\$\{orderContactName\}")
+                .Replace(ret, order.NomeContato);
+
+            return ret;
         }
     }
 }
