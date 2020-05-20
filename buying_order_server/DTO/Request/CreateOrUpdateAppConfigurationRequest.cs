@@ -17,7 +17,7 @@ namespace buying_order_server.DTO.Request
         public string AppEmailText { get; set; }
         public string AppEmailHtml { get; set; }
         public string AppCronPattern { get; set; }
-        public string AppCronTimezone { get; set; }
+        public string AppReplyLink { get; set; }
         public int AppNotificationTriggerDelta { get; set; }
     }
 
@@ -33,7 +33,6 @@ namespace buying_order_server.DTO.Request
             RuleFor(o => o.AppEmailFrom).NotEmpty();
             RuleFor(o => o.AppEmailSubject).NotEmpty();
             RuleFor(o => o.AppCronPattern).NotEmpty();
-            RuleFor(o => o.AppCronTimezone).NotEmpty();
             RuleFor(o => o.AppNotificationTriggerDelta).NotEmpty();
             RuleFor(o => o).Custom((o, context) =>
             {

@@ -112,9 +112,9 @@ namespace buying_order_server.Services
 
             emailSchedulerCfg.emailConfigs = ordersAndProviders.Select(e =>
               {
-                  var textContent = this.interpolateVariables(_dbConfigs.AppEmailText, e.Order);
-                  var htmlContent = this.interpolateVariables(_dbConfigs.AppEmailHtml, e.Order);
-                  var subject = this.interpolateVariables(_dbConfigs.AppEmailSubject, e.Order);
+                  var textContent = this.interpolateVariables(_dbConfigs.AppEmailText, e.Order, false);
+                  var htmlContent = this.interpolateVariables(_dbConfigs.AppEmailHtml, e.Order, true);
+                  var subject = this.interpolateVariables(_dbConfigs.AppEmailSubject, e.Order, false);
                   return new EmailConfigs
                   {
                       htmlContent = htmlContent,
@@ -196,7 +196,7 @@ namespace buying_order_server.Services
             }
         }
 
-        private string interpolateVariables(string content, BuyingOrdersResponse order)
+        private string interpolateVariables(string content, BuyingOrdersResponse order, bool html)
         {
             var ret = new Regex(@"\$\{providerName\}")
                 .Replace(content, order.NomeContato);
@@ -208,6 +208,22 @@ namespace buying_order_server.Services
                 .Replace(ret, order.DataPrevista);
             ret = new Regex(@"\$\{orderContactName\}")
                 .Replace(ret, order.NomeContato);
+
+            if (this._dbConfigs.AppReplyLink != null)
+            {
+                var link = $"{this._dbConfigs.AppReplyLink}?orderid={order.Id}";
+                if (html)
+                {
+                    ret = new Regex(@"\$\{replyLink\}")
+                        .Replace(ret, $"<a href=\"{link}\" target=\"_blank\">Clique aqui para informar uma nova data.</a>");
+                }
+                else
+                {
+                    ret = new Regex(@"\$\{replyLink\}")
+                        .Replace(ret, $"Link para informar uma nova data: {link}");
+                }
+
+            }
 
             return ret;
         }

@@ -28,10 +28,10 @@ namespace buying_order_server.Data.Migrations
                 .WithColumn("AppEmailFrom").AsString()
                 .WithColumn("AppEmailSubject").AsString()
                 .WithColumn("AppCronPattern").AsString()
-                .WithColumn("AppCronTimezone").AsString()
                 .WithColumn("AppNotificationTriggerDelta").AsInt32()
                 .WithColumn("AppEmailText").AsString().Nullable()
                 .WithColumn("AppEmailHtml").AsString().Nullable()
+                .WithColumn("AppReplyLink").AsString().Nullable()
                 .WithColumn("AppSMTPSecure").AsBoolean().Nullable()
                 .WithColumn("AppBlacklist").AsString().Nullable();
 

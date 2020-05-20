@@ -50,20 +50,19 @@ namespace buying_order_server.Data.Repository
         public async Task<bool> CreateAsync(AppConfiguration entity)
         {
             var stmt = @"INSERT INTO ""AppConfiguration"" 
-                            (""AppBlacklist"", ""AppCronPattern"", ""AppCronTimezone"", ""AppEmailFrom"",
+                            (""AppBlacklist"", ""AppCronPattern"", ""AppEmailFrom"",
                             ""AppEmailHtml"", ""AppEmailName"", ""AppEmailPassword"", ""AppEmailSubject"",
-                            ""AppEmailText"", ""AppEmailUser"", ""AppNotificationTriggerDelta"",
+                            ""AppEmailText"", ""AppEmailUser"", ""AppReplyLink"", ""AppNotificationTriggerDelta"",
                             ""AppSMTPPort"", ""AppSMTPSecure"", ""AppSMTPAddress"") 
                         VALUES 
-                            (@AppBlacklist, @AppCronPattern, @AppCronTimezone, @AppEmailFrom,
+                            (@AppBlacklist, @AppCronPattern, @AppEmailFrom,
                             @AppEmailHtml, @AppEmailName, @AppEmailPassword, @AppEmailSubject,
-                            @AppEmailText, @AppEmailUser, @AppNotificationTriggerDelta,
+                            @AppEmailText, @AppEmailUser, @AppReplyLink, @AppNotificationTriggerDelta,
                             @AppSMTPPort, @AppSMTPSecure, @AppSMTPAddress)";
                
             var parameters = new DynamicParameters();
             parameters.Add("AppBlacklist", entity.AppBlacklist);
             parameters.Add("AppCronPattern", entity.AppCronPattern);
-            parameters.Add("AppCronTimezone", entity.AppCronTimezone);
             parameters.Add("AppEmailFrom", entity.AppEmailFrom);
             parameters.Add("AppEmailHtml", entity.AppEmailHtml);
             parameters.Add("AppEmailName", entity.AppEmailName);
@@ -71,6 +70,7 @@ namespace buying_order_server.Data.Repository
             parameters.Add("AppEmailSubject", entity.AppEmailSubject);
             parameters.Add("AppEmailText", entity.AppEmailText);
             parameters.Add("AppEmailUser", entity.AppEmailUser);
+            parameters.Add("AppReplyLink", entity.AppReplyLink);
             parameters.Add("AppNotificationTriggerDelta", entity.AppNotificationTriggerDelta);
             parameters.Add("AppSMTPPort", entity.AppSMTPPort);
             parameters.Add("AppSMTPSecure", entity.AppSMTPSecure);

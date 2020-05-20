@@ -18,7 +18,6 @@ namespace buying_order_server.DTO.Response
         public string AppServerHost { get; set; }
         public int AppServerPort { get; set; }
         public string AppCronPattern { get; set; }
-        public string AppCronTimezone { get; set; }
         public int AppNotificationTriggerDelta { get; set; }
     }
 }
