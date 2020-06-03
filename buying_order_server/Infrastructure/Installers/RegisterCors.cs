@@ -14,7 +14,7 @@ namespace buying_order_server.Infrastructure.Installers
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll",
-                builder => builder.WithOrigins(config["CORS:Origin"])
+                builder => builder.WithOrigins(config["CORS:Origin1"], config["CORS:Origin2"])
                             .WithMethods("GET", "POST", "PUT", "DELETE")
                             .AllowAnyHeader()
                             .AllowCredentials()

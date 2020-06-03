@@ -1,0 +1,47 @@
+2020-06-02T21:56:27.7177952-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-06-02T21:58:06.5322515-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-06-02T21:58:06.9552126-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) VersionMigration migrating
+2020-06-02T21:58:06.9570564-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) Beginning Transaction
+2020-06-02T21:58:06.9686062-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) CreateTable VersionInfo
+2020-06-02T21:58:06.9742418-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) CREATE TABLE "public"."VersionInfo" ("Version" bigint NOT NULL);
+2020-06-02T21:58:06.9797800-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0090048s
+2020-06-02T21:58:06.9814469-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) Committing Transaction
+2020-06-02T21:58:06.9857630-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) VersionMigration migrated
+2020-06-02T21:58:06.9863984-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0163748s
+2020-06-02T21:58:06.9925617-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) VersionUniqueMigration migrating
+2020-06-02T21:58:06.9932050-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) Beginning Transaction
+2020-06-02T21:58:07.0005187-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) CreateIndex VersionInfo (Version)
+2020-06-02T21:58:07.0017452-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) CREATE UNIQUE INDEX "UC_Version" ON "public"."VersionInfo" ("Version" ASC);
+2020-06-02T21:58:07.0050143-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0038842s
+2020-06-02T21:58:07.0057394-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) AlterTable VersionInfo
+2020-06-02T21:58:07.0070478-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) 
+2020-06-02T21:58:07.0075847-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0010131s
+2020-06-02T21:58:07.0087376-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) CreateColumn VersionInfo AppliedOn DateTime
+2020-06-02T21:58:07.0108016-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) ALTER TABLE "public"."VersionInfo" ADD "AppliedOn" timestamp;
+2020-06-02T21:58:07.0120739-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0017225s
+2020-06-02T21:58:07.0126522-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) Committing Transaction
+2020-06-02T21:58:07.0146615-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) VersionUniqueMigration migrated
+2020-06-02T21:58:07.0152536-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0043143s
+2020-06-02T21:58:07.0191245-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) VersionDescriptionMigration migrating
+2020-06-02T21:58:07.0197187-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) Beginning Transaction
+2020-06-02T21:58:07.0213754-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) AlterTable VersionInfo
+2020-06-02T21:58:07.0220144-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) 
+2020-06-02T21:58:07.0228631-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0008581s
+2020-06-02T21:58:07.0238303-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) CreateColumn VersionInfo Description String
+2020-06-02T21:58:07.0253076-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) ALTER TABLE "public"."VersionInfo" ADD "Description" varchar(1024);
+2020-06-02T21:58:07.0283417-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0036083s
+2020-06-02T21:58:07.0289176-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) Committing Transaction
+2020-06-02T21:58:07.0310215-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) VersionDescriptionMigration migrated
+2020-06-02T21:58:07.0315976-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0062923s
+2020-06-02T21:58:07.0377346-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) 0: CreateTables migrating
+2020-06-02T21:58:07.0383832-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) Beginning Transaction
+2020-06-02T21:58:07.0410541-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) CreateTable OrderNotification
+2020-06-02T21:58:07.0422137-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) CREATE TABLE "public"."OrderNotification" ("BuyingOrderId" integer NOT NULL, "ProviderId" integer NOT NULL, "Timestamp" timestamp NOT NULL, "Sent" boolean NOT NULL, "OrderDate" date NOT NULL, "EstimatedOrderDate" date NOT NULL, "ProviderEmail" text NOT NULL, "EmployeeEmail" text NOT NULL, CONSTRAINT "PK_OrderNotification" PRIMARY KEY ("BuyingOrderId"));
+2020-06-02T21:58:07.0485232-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0068783s
+2020-06-02T21:58:07.0491191-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) CreateTable AppConfiguration
+2020-06-02T21:58:07.0501724-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) CREATE TABLE "public"."AppConfiguration" ("Id" serial NOT NULL, "AppEmailName" text NOT NULL, "AppEmailUser" text NOT NULL, "AppEmailPassword" text NOT NULL, "AppSMTPAddress" text NOT NULL, "AppSMTPPort" integer NOT NULL, "AppEmailFrom" text NOT NULL, "AppEmailSubject" text NOT NULL, "AppCronPattern" text NOT NULL, "AppNotificationTriggerDelta" integer NOT NULL, "AppEmailText" text, "AppEmailHtml" text, "AppReplyLink" text, "AppSMTPSecure" boolean, "AppBlacklist" text, CONSTRAINT "PK_AppConfiguration" PRIMARY KEY ("Id"));
+2020-06-02T21:58:07.0576327-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0075768s
+2020-06-02T21:58:07.0606021-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) INSERT INTO "public"."VersionInfo" ("Version","AppliedOn","Description") VALUES (0,'2020-06-03T00:58:07','CreateTables');
+2020-06-02T21:58:07.0624623-03:00 [INF] (FluentMigrator.Runner.Processors.Postgres.PostgresProcessor) Committing Transaction
+2020-06-02T21:58:07.0654356-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) 0: CreateTables migrated
+2020-06-02T21:58:07.0660271-03:00 [INF] (FluentMigrator.Runner.MigrationRunner) => 0,0153798s
