@@ -13,6 +13,7 @@ namespace buying_order_server.Infrastructure.Installers
         {
             //Register DTO Validators
             services.AddTransient<IValidator<CreateOrUpdateAppConfigurationRequest>, CreateOrUpdateAppConfigurationRequestValidator>();
+            services.AddTransient<IValidator<UpdateOrderDateRequest>, UpdateOrderDateRequestValidator>();
 
             //Disable Automatic Model State Validation built-in to ASP.NET Core
             services.Configure<ApiBehaviorOptions>(opt => { opt.SuppressModelStateInvalidFilter = true; });
