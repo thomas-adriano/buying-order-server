@@ -1,0 +1,912 @@
+2020-06-04T21:15:51.2756787-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-06-04T21:16:59.9554456-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-06-04T21:17:18.9698747-03:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-06-04T21:17:33.0375603-03:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-06-04T21:17:47.0770034-03:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-06-04T21:18:01.1308550-03:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-06-04T21:18:29.2381180-03:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-06-04T21:18:43.3028011-03:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-06-04T21:18:57.3457237-03:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-06-04T21:19:11.4104695-03:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-06-04T21:20:05.3084804-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-06-04T21:22:52.2198438-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status subscriber initialized.
+2020-06-04T21:22:52.2372805-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:22:52.2391103-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T21:22:52.2411277-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:22:52.2419153-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T21:22:52.2427551-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:22:52.3744449-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET http localhost:5000/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 204ms
+2020-06-04T21:22:58.5295679-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-06-04T21:22:58.5646958-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET http localhost:5000/api/v1/app-configuration   
+                                                     Responded with [500] in 6190ms
+2020-06-04T21:23:06.5684217-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub connection disconnected
+2020-06-04T21:23:06.5697232-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-06-04T21:23:07.0188324-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET http localhost:5000/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 1ms
+2020-06-04T21:23:07.0450946-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-06-04T21:23:08.8857697-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET http localhost:5000/api/v1/app-configuration   
+                                                     Responded with [500] in 1644ms
+2020-06-04T21:23:14.4106141-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST http localhost:5000/api/v1/app-configuration  {"appEmailName":"Inspire Home","appEmailUser":"viola.von@ethereal.email","appBlacklist":null,"appEmailPassword":"Q61Z2qsRsmg7nUEzNG","appSMTPAddress":"smtp.ethereal.email","appSMTPPort":587,"appSMTPSecure":false,"appEmailFrom":"inspirehome@mail.com","appEmailSubject":"Olá ${providerName}","appReplyLink":"https://buying-order-agent-reply.firebaseapp.com/","appCronPattern":"0/60 * * * * *","appNotificationTriggerDelta":5,"appEmailText":"Olá ${providerName}, como o pedido numero ${orderNumber}, data ${orderDate} está prevista para ${previewOrderDate}. Favor contatar ${orderContactName} ou informar nova data ${replyLinkBegin}aqui${replyLinkEnd}","appEmailHtml":"Olá ${providerName}, como o pedido numero ${orderNumber}, data ${orderDate} está prevista para ${previewOrderDate}. Favor contatar ${orderContactName} ou informar nova data em ${replyLinkBegin}"} 
+                                                     Responded with [201] in 100ms
+2020-06-04T21:23:18.3179163-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST http localhost:5000/api/v1/app-configuration  {"appEmailName":"Inspire Home","appEmailUser":"viola.von@ethereal.email","appBlacklist":null,"appEmailPassword":"Q61Z2qsRsmg7nUEzNG","appSMTPAddress":"smtp.ethereal.email","appSMTPPort":587,"appSMTPSecure":false,"appEmailFrom":"inspirehome@mail.com","appEmailSubject":"Olá ${providerName}","appReplyLink":"https://buying-order-agent-reply.firebaseapp.com/","appCronPattern":"0/60 * * * * *","appNotificationTriggerDelta":5,"appEmailText":"Olá ${providerName}, como o pedido numero ${orderNumber}, data ${orderDate} está prevista para ${previewOrderDate}. Favor contatar ${orderContactName} ou informar nova data ${replyLinkBegin}aqui${replyLinkEnd}","appEmailHtml":"Olá ${providerName}, como o pedido numero ${orderNumber}, data ${orderDate} está prevista para ${previewOrderDate}. Favor contatar ${orderContactName} ou informar nova data em ${replyLinkBegin}"} 
+                                                     Responded with [201] in 5ms
+2020-06-04T21:23:20.6256762-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub connection disconnected
+2020-06-04T21:23:20.6267570-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-06-04T21:23:21.0279627-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET http localhost:5000/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 1ms
+2020-06-04T21:23:21.0510720-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-06-04T21:23:21.2757924-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET http localhost:5000/api/v1/app-configuration   
+                                                     Responded with [200] in 27ms
+2020-06-04T21:23:29.4191965-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Initializing
+2020-06-04T21:23:29.4200897-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:23:29.4247902-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST http localhost:5000/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 8ms
+2020-06-04T21:23:29.4468838-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed SchedulerRunning
+2020-06-04T21:23:29.4476436-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:23:41.9057645-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP connected
+2020-06-04T21:23:42.2194841-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP authenticated
+2020-06-04T21:23:42.2332856-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 1 of 117 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:23:42.2349938-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:23:43.5531489-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 1 of 117 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:23:43.5643481-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 2 of 117 to sandra@jnorberto.com.br
+2020-06-04T21:23:43.5650158-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:23:44.7825787-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 2 of 117 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:23:44.7926614-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 3 of 117 to ana.cadence@gmail.com
+2020-06-04T21:23:44.7933254-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-06-04T21:23:46.0198398-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 3 of 117 successfully sent to ana.cadence@gmail.com
+2020-06-04T21:23:46.0260395-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 4 of 117 to sandra@jnorberto.com.br
+2020-06-04T21:23:46.0266952-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:23:47.1975079-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 4 of 117 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:23:47.2034764-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 5 of 117 to sandra@jnorberto.com.br
+2020-06-04T21:23:47.2041558-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:23:48.4189544-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 5 of 117 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:23:48.4251442-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 6 of 117 to vendasemporiodaluz@gmail.com
+2020-06-04T21:23:48.4257853-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:23:49.6180909-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 6 of 117 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:23:49.6246137-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 7 of 117 to z.weber@uol.com.br
+2020-06-04T21:23:49.6252554-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:23:50.8309080-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 7 of 117 successfully sent to z.weber@uol.com.br
+2020-06-04T21:23:50.8399886-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 8 of 117 to vendasemporiodaluz@gmail.com
+2020-06-04T21:23:50.8406515-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:23:52.0312751-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 8 of 117 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:23:52.0406346-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 9 of 117 to alexandre.abrepresenta@gmail.com
+2020-06-04T21:23:52.0417528-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-06-04T21:23:53.2173024-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 9 of 117 successfully sent to alexandre.abrepresenta@gmail.com
+2020-06-04T21:23:53.2260908-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 10 of 117 to vendasemporiodaluz@gmail.com
+2020-06-04T21:23:53.2274953-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:23:54.4192596-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 10 of 117 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:23:54.4279983-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 11 of 117 to z.weber@uol.com.br
+2020-06-04T21:23:54.4294004-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:23:55.6421931-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 11 of 117 successfully sent to z.weber@uol.com.br
+2020-06-04T21:23:55.6517347-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 12 of 117 to vendas@bellaitalia.com.br
+2020-06-04T21:23:55.6527076-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:23:56.8203427-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 12 of 117 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:23:56.8302373-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 13 of 117 to z.weber@uol.com.br
+2020-06-04T21:23:56.8309775-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:23:58.0293683-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 13 of 117 successfully sent to z.weber@uol.com.br
+2020-06-04T21:23:58.0385909-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 14 of 117 to sandra@jnorberto.com.br
+2020-06-04T21:23:58.0397385-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:23:59.2338706-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 14 of 117 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:23:59.2437078-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 15 of 117 to vendasemporiodaluz@gmail.com
+2020-06-04T21:23:59.2443713-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:00.4413508-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 15 of 117 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:00.4511256-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 16 of 117 to vendas@bellaitalia.com.br
+2020-06-04T21:24:00.4518571-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:24:01.6483281-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 16 of 117 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:24:01.6698784-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 17 of 117 to alexandre.abrepresenta@gmail.com
+2020-06-04T21:24:01.6706525-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-06-04T21:24:02.8659447-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 17 of 117 successfully sent to alexandre.abrepresenta@gmail.com
+2020-06-04T21:24:02.8720817-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 18 of 117 to z.weber@uol.com.br
+2020-06-04T21:24:02.8727257-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:24:04.0493951-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 18 of 117 successfully sent to z.weber@uol.com.br
+2020-06-04T21:24:04.0554633-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 19 of 117 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:04.0560867-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:05.2340323-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 19 of 117 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:05.2404148-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 20 of 117 to sandra@jnorberto.com.br
+2020-06-04T21:24:05.2411442-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:24:06.4202739-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 20 of 117 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:24:06.4263375-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 21 of 117 to ana.cadence@gmail.com
+2020-06-04T21:24:06.4269602-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-06-04T21:24:07.5990755-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 21 of 117 successfully sent to ana.cadence@gmail.com
+2020-06-04T21:24:07.6050113-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 22 of 117 to vendas@bellaitalia.com.br
+2020-06-04T21:24:07.6056742-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:24:08.7970872-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 22 of 117 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:24:08.8032503-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 23 of 117 to willian.lima@interlight.com.br
+2020-06-04T21:24:08.8039094-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to willian.lima@interlight.com.br
+2020-06-04T21:24:09.9934146-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 23 of 117 successfully sent to willian.lima@interlight.com.br
+2020-06-04T21:24:09.9995869-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 24 of 117 to contato@rennovare.com.br
+2020-06-04T21:24:10.0002517-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:24:11.1705035-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 24 of 117 successfully sent to contato@rennovare.com.br
+2020-06-04T21:24:11.1764250-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 25 of 117 to impacta@impactarep.com.br
+2020-06-04T21:24:11.1770702-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to impacta@impactarep.com.br
+2020-06-04T21:24:12.3691450-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 25 of 117 successfully sent to impacta@impactarep.com.br
+2020-06-04T21:24:12.3754884-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 26 of 117 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:12.3761019-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:13.5865439-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 26 of 117 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:13.5925588-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 27 of 117 to z.weber@uol.com.br
+2020-06-04T21:24:13.5932196-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:24:14.7664212-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 27 of 117 successfully sent to z.weber@uol.com.br
+2020-06-04T21:24:14.7724485-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 28 of 117 to z.weber@uol.com.br
+2020-06-04T21:24:14.7730953-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:24:15.9541787-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 28 of 117 successfully sent to z.weber@uol.com.br
+2020-06-04T21:24:15.9605025-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 29 of 117 to vendasbeg@terra.com.br
+2020-06-04T21:24:15.9611547-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasbeg@terra.com.br
+2020-06-04T21:24:17.1573185-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 29 of 117 successfully sent to vendasbeg@terra.com.br
+2020-06-04T21:24:17.1633710-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 30 of 117 to sandra@jnorberto.com.br
+2020-06-04T21:24:17.1640037-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:24:18.3169336-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 30 of 117 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:24:18.3234991-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 31 of 117 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:18.3241563-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:19.4917889-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 31 of 117 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:19.4977970-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 32 of 117 to vendas.vipsc2005@gmail.com
+2020-06-04T21:24:19.4984345-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:24:20.6679066-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 32 of 117 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:24:20.6738687-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 33 of 117 to vendas@reyam.com.br
+2020-06-04T21:24:20.6745083-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@reyam.com.br
+2020-06-04T21:24:21.8535617-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 33 of 117 successfully sent to vendas@reyam.com.br
+2020-06-04T21:24:21.8595666-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 34 of 117 to vendas.vipsc2005@gmail.com
+2020-06-04T21:24:21.8602106-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:24:23.0500432-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 34 of 117 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:24:23.0561295-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 35 of 117 to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:23.0567567-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:24.2286210-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 35 of 117 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:24.2382202-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 36 of 117 to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:24.2389164-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:25.4260905-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 36 of 117 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:25.4321631-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 37 of 117 to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:24:25.4327914-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:24:26.6299381-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 37 of 117 successfully sent to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:24:26.6359835-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 38 of 117 to contato@rennovare.com.br
+2020-06-04T21:24:26.6366344-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:24:27.8327541-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 38 of 117 successfully sent to contato@rennovare.com.br
+2020-06-04T21:24:27.8387732-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 39 of 117 to contato@rennovare.com.br
+2020-06-04T21:24:27.8394131-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:24:28.9836761-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 39 of 117 successfully sent to contato@rennovare.com.br
+2020-06-04T21:24:28.9898401-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 40 of 117 to vendasbeg@terra.com.br
+2020-06-04T21:24:28.9904724-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasbeg@terra.com.br
+2020-06-04T21:24:30.1629855-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 40 of 117 successfully sent to vendasbeg@terra.com.br
+2020-06-04T21:24:30.1690596-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 41 of 117 to sandra@jnorberto.com.br
+2020-06-04T21:24:30.1696908-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:24:31.3538734-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 41 of 117 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:24:31.3602555-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 42 of 117 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:31.3609072-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:32.5304576-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 42 of 117 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:32.5574303-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 43 of 117 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:32.5583311-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:33.7530466-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 43 of 117 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:33.7589560-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 44 of 117 to vendas.vipsc2005@gmail.com
+2020-06-04T21:24:33.7595964-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:24:34.8114200-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Email sending routine cancelled by the user
+2020-06-04T21:24:34.8418929-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T21:24:34.8429868-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:24:34.8441707-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T21:24:34.8450776-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:24:34.8469283-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST http localhost:5000/api/v1/app-management/stop-scheduler  {} 
+                                                     Responded with [200] in 457ms
+2020-06-04T21:24:35.7877283-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST http localhost:5000/api/v1/app-configuration  {"appEmailName":"Inspire Home","appEmailUser":"viola.von@ethereal.email","appBlacklist":null,"appEmailPassword":"Q61Z2qsRsmg7nUEzNG","appSMTPAddress":"smtp.ethereal.email","appSMTPPort":587,"appSMTPSecure":false,"appEmailFrom":"inspirehome@mail.com","appEmailSubject":"Olá ${providerName}","appReplyLink":"https://buying-order-agent-reply.firebaseapp.com/","appCronPattern":"0/60 * * * * *","appNotificationTriggerDelta":5,"appEmailText":"Olá ${providerName}, como o pedido numero ${orderNumber}, data ${orderDate} está prevista para ${previewOrderDate}. Favor contatar ${orderContactName} ou informar nova data\n${replyLinkBegin} ","appEmailHtml":"<p>Olá ${providerName}, como o pedido numero ${orderNumber}, data ${orderDate} está prevista para ${previewOrderDate}. Favor contatar ${orderContactName} ou informar nova data em ${replyLinkBegin}aqui${replyLinkEnd}</p>"} 
+                                                     Responded with [201] in 5ms
+2020-06-04T21:24:38.5773177-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Initializing
+2020-06-04T21:24:38.5781573-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:24:38.5819515-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed SchedulerRunning
+2020-06-04T21:24:38.5823830-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST http localhost:5000/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 5ms
+2020-06-04T21:24:38.5826444-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:24:50.9002833-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP connected
+2020-06-04T21:24:51.1972351-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP authenticated
+2020-06-04T21:24:51.2029144-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 1 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:51.2035365-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:52.3701545-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 1 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:24:52.3758931-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 2 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:24:52.3765143-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:24:53.5344907-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 2 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:24:53.5402030-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 3 of 108 to ana.cadence@gmail.com
+2020-06-04T21:24:53.5408322-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-06-04T21:24:54.7045183-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 3 of 108 successfully sent to ana.cadence@gmail.com
+2020-06-04T21:24:54.7191339-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 4 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:24:54.7197915-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:24:55.8980362-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 4 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:24:55.9035771-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 5 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:24:55.9042014-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:24:57.0615470-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 5 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:24:57.0672767-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 6 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:57.0679106-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:58.2254312-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 6 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:58.2312977-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 7 of 108 to z.weber@uol.com.br
+2020-06-04T21:24:58.2319485-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:24:59.3911835-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 7 of 108 successfully sent to z.weber@uol.com.br
+2020-06-04T21:24:59.3969209-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 8 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:24:59.3975606-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:00.5566029-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 8 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:00.5623133-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 9 of 108 to alexandre.abrepresenta@gmail.com
+2020-06-04T21:25:00.5629387-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-06-04T21:25:01.7180878-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 9 of 108 successfully sent to alexandre.abrepresenta@gmail.com
+2020-06-04T21:25:01.7240541-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 10 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:01.7248363-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:02.8945585-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 10 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:02.9010052-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 11 of 108 to z.weber@uol.com.br
+2020-06-04T21:25:02.9017649-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:25:04.0589608-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 11 of 108 successfully sent to z.weber@uol.com.br
+2020-06-04T21:25:04.0647359-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 12 of 108 to vendas@bellaitalia.com.br
+2020-06-04T21:25:04.0653810-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:25:05.2213530-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 12 of 108 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:25:05.2270606-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 13 of 108 to z.weber@uol.com.br
+2020-06-04T21:25:05.2277016-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:25:05.6191325-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST http localhost:5000/api/v1/app-configuration  {"appEmailName":"Inspire Home","appEmailUser":"viola.von@ethereal.email","appBlacklist":null,"appEmailPassword":"Q61Z2qsRsmg7nUEzNG","appSMTPAddress":"smtp.ethereal.email","appSMTPPort":587,"appSMTPSecure":false,"appEmailFrom":"inspirehome@mail.com","appEmailSubject":"Olá ${providerName}","appReplyLink":"https://buying-order-agent-reply.firebaseapp.com/","appCronPattern":"0/60 * * * * *","appNotificationTriggerDelta":5,"appEmailText":"Olá ${providerName}, como o pedido numero ${orderNumber}, data ${orderDate} está prevista para ${previewOrderDate}. Favor contatar ${orderContactName} ou informar nova data\n${replyLinkBegin} ","appEmailHtml":"<p>Olá ${providerName}, como o pedido numero ${orderNumber}, data ${orderDate} está prevista para ${previewOrderDate}. Favor contatar ${orderContactName} ou informar nova data ${replyLinkBegin}aqui${replyLinkEnd}</p>"} 
+                                                     Responded with [201] in 6ms
+2020-06-04T21:25:06.3868827-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 13 of 108 successfully sent to z.weber@uol.com.br
+2020-06-04T21:25:06.3926650-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 14 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:25:06.3932923-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:25:07.5700196-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 14 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:25:07.5757823-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 15 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:07.5764072-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:08.7331814-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 15 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:08.7396151-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 16 of 108 to vendas@bellaitalia.com.br
+2020-06-04T21:25:08.7402638-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:25:09.8996198-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 16 of 108 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:25:09.9052182-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 17 of 108 to alexandre.abrepresenta@gmail.com
+2020-06-04T21:25:09.9058223-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-06-04T21:25:11.0648317-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 17 of 108 successfully sent to alexandre.abrepresenta@gmail.com
+2020-06-04T21:25:11.0709991-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 18 of 108 to z.weber@uol.com.br
+2020-06-04T21:25:11.0716167-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:25:12.2266798-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 18 of 108 successfully sent to z.weber@uol.com.br
+2020-06-04T21:25:12.2324321-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 19 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:12.2330800-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:13.4109740-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 19 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:13.4166166-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 20 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:25:13.4172525-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:25:14.5760282-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 20 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:25:14.5817201-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 21 of 108 to ana.cadence@gmail.com
+2020-06-04T21:25:14.5823724-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-06-04T21:25:15.7391699-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 21 of 108 successfully sent to ana.cadence@gmail.com
+2020-06-04T21:25:15.7449375-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 22 of 108 to vendas@bellaitalia.com.br
+2020-06-04T21:25:15.7455655-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:25:16.9055653-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 22 of 108 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:25:16.9114951-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 23 of 108 to willian.lima@interlight.com.br
+2020-06-04T21:25:16.9121164-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to willian.lima@interlight.com.br
+2020-06-04T21:25:18.0730727-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 23 of 108 successfully sent to willian.lima@interlight.com.br
+2020-06-04T21:25:18.0815641-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 24 of 108 to contato@rennovare.com.br
+2020-06-04T21:25:18.0830551-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:25:19.2506573-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 24 of 108 successfully sent to contato@rennovare.com.br
+2020-06-04T21:25:19.2565542-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 25 of 108 to impacta@impactarep.com.br
+2020-06-04T21:25:19.2571953-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to impacta@impactarep.com.br
+2020-06-04T21:25:20.4230955-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 25 of 108 successfully sent to impacta@impactarep.com.br
+2020-06-04T21:25:20.4287592-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 26 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:20.4294280-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:21.5875293-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 26 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:21.5931937-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 27 of 108 to z.weber@uol.com.br
+2020-06-04T21:25:21.5938075-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:25:22.7510441-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 27 of 108 successfully sent to z.weber@uol.com.br
+2020-06-04T21:25:22.7570859-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 28 of 108 to z.weber@uol.com.br
+2020-06-04T21:25:22.7577341-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:25:23.9276844-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 28 of 108 successfully sent to z.weber@uol.com.br
+2020-06-04T21:25:23.9334561-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 29 of 108 to vendasbeg@terra.com.br
+2020-06-04T21:25:23.9340915-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasbeg@terra.com.br
+2020-06-04T21:25:25.1022350-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 29 of 108 successfully sent to vendasbeg@terra.com.br
+2020-06-04T21:25:25.1078922-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 30 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:25:25.1085300-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:25:26.2828297-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 30 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:25:26.2884326-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 31 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:26.2890404-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:27.4575564-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 31 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:27.4791075-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 32 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:27.4798696-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:28.6361869-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 32 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:28.6449168-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 33 of 108 to vendas@reyam.com.br
+2020-06-04T21:25:28.6474541-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@reyam.com.br
+2020-06-04T21:25:29.8090938-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 33 of 108 successfully sent to vendas@reyam.com.br
+2020-06-04T21:25:29.8150770-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 34 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:29.8157816-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:30.9748754-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 34 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:30.9807540-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 35 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:30.9815759-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:32.1446639-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 35 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:32.1506052-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 36 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:32.1513004-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:33.3091696-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 36 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:33.3151685-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 37 of 108 to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:25:33.3158424-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:25:34.4907478-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 37 of 108 successfully sent to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:25:34.4965725-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 38 of 108 to contato@rennovare.com.br
+2020-06-04T21:25:34.4972393-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:25:35.6620612-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 38 of 108 successfully sent to contato@rennovare.com.br
+2020-06-04T21:25:35.6677873-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 39 of 108 to contato@rennovare.com.br
+2020-06-04T21:25:35.6684468-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:25:36.8283439-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 39 of 108 successfully sent to contato@rennovare.com.br
+2020-06-04T21:25:36.8341828-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 40 of 108 to vendasbeg@terra.com.br
+2020-06-04T21:25:36.8348446-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasbeg@terra.com.br
+2020-06-04T21:25:37.9948663-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 40 of 108 successfully sent to vendasbeg@terra.com.br
+2020-06-04T21:25:38.0006208-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 41 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:25:38.0012681-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:25:39.1661214-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 41 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:25:39.1718231-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 42 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:39.1724347-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:40.3322343-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 42 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:40.3378867-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 43 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:40.3385441-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:41.4918799-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 43 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:41.4978874-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 44 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:41.4985102-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:42.6575230-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 44 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:42.6668552-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 45 of 108 to uerba.rep@terra.com.br
+2020-06-04T21:25:42.6677589-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to uerba.rep@terra.com.br
+2020-06-04T21:25:43.8242531-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 45 of 108 successfully sent to uerba.rep@terra.com.br
+2020-06-04T21:25:43.8298297-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 46 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:25:43.8304654-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:25:44.9878274-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 46 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:25:44.9936491-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 47 of 108 to contato@rennovare.com.br
+2020-06-04T21:25:44.9942582-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:25:46.1509517-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 47 of 108 successfully sent to contato@rennovare.com.br
+2020-06-04T21:25:46.1569537-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 48 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:46.1575898-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:47.3120316-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 48 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:47.3178115-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 49 of 108 to michelle@eletrohil.com.br
+2020-06-04T21:25:47.3185081-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to michelle@eletrohil.com.br
+2020-06-04T21:25:48.4786111-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 49 of 108 successfully sent to michelle@eletrohil.com.br
+2020-06-04T21:25:48.4842877-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 50 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:48.4848983-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:49.6458176-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 50 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:25:49.6518049-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 51 of 108 to vendasbeg@terra.com.br
+2020-06-04T21:25:49.6524392-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasbeg@terra.com.br
+2020-06-04T21:25:50.8148837-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 51 of 108 successfully sent to vendasbeg@terra.com.br
+2020-06-04T21:25:50.8247341-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 52 of 108 to z.weber@uol.com.br
+2020-06-04T21:25:50.8253856-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:25:51.9871801-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 52 of 108 successfully sent to z.weber@uol.com.br
+2020-06-04T21:25:51.9933714-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 53 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:51.9940407-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:53.1537297-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 53 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:53.1594105-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 54 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:53.1600296-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:54.3178426-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 54 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:25:54.3235742-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 55 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:54.3242173-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:55.4835414-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 55 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:55.4895931-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 56 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:55.4902417-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:56.6519113-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 56 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:56.6577050-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 57 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:56.6583724-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:57.8158537-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 57 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:57.8217884-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 58 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:57.8224424-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:58.9758257-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 58 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:58.9814723-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 59 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:25:58.9821046-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:00.1440896-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 59 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:00.1499926-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 60 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:00.1506671-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:01.3095082-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 60 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:01.3154129-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 61 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:01.3160707-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:02.4733201-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 61 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:02.4791782-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 62 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:02.4797951-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:03.6426840-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 62 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:03.6486235-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 63 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:03.6492899-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:04.8151999-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 63 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:04.8209938-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 64 of 108 to uerba.rep@terra.com.br
+2020-06-04T21:26:04.8216300-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to uerba.rep@terra.com.br
+2020-06-04T21:26:05.9773387-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 64 of 108 successfully sent to uerba.rep@terra.com.br
+2020-06-04T21:26:05.9853732-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 65 of 108 to ana.cadence@gmail.com
+2020-06-04T21:26:05.9860362-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-06-04T21:26:07.1550606-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 65 of 108 successfully sent to ana.cadence@gmail.com
+2020-06-04T21:26:07.1606386-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 66 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:26:07.1612757-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:26:08.3166099-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 66 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:26:08.3223352-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 67 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:08.3229576-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:09.4802524-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 67 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:09.4860204-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 68 of 108 to contato@rennovare.com.br
+2020-06-04T21:26:09.4866879-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:26:10.6499623-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 68 of 108 successfully sent to contato@rennovare.com.br
+2020-06-04T21:26:10.6557518-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 69 of 108 to impacta@impactarep.com.br
+2020-06-04T21:26:10.6563623-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to impacta@impactarep.com.br
+2020-06-04T21:26:11.8244700-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 69 of 108 successfully sent to impacta@impactarep.com.br
+2020-06-04T21:26:11.8306182-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 70 of 108 to alexandre.abrepresenta@gmail.com
+2020-06-04T21:26:11.8312345-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-06-04T21:26:12.9856398-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 70 of 108 successfully sent to alexandre.abrepresenta@gmail.com
+2020-06-04T21:26:12.9912553-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 71 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:12.9918824-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:14.1489598-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 71 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:14.1586457-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 72 of 108 to ana.cadence@gmail.com
+2020-06-04T21:26:14.1592900-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-06-04T21:26:15.3175430-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 72 of 108 successfully sent to ana.cadence@gmail.com
+2020-06-04T21:26:15.3231098-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 73 of 108 to willian.lima@interlight.com.br
+2020-06-04T21:26:15.3237105-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to willian.lima@interlight.com.br
+2020-06-04T21:26:16.4896388-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 73 of 108 successfully sent to willian.lima@interlight.com.br
+2020-06-04T21:26:16.4954523-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 74 of 108 to vendasbeg@terra.com.br
+2020-06-04T21:26:16.4960952-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasbeg@terra.com.br
+2020-06-04T21:26:17.6619368-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 74 of 108 successfully sent to vendasbeg@terra.com.br
+2020-06-04T21:26:17.6677110-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 75 of 108 to z.weber@uol.com.br
+2020-06-04T21:26:17.6683612-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:26:18.8374184-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 75 of 108 successfully sent to z.weber@uol.com.br
+2020-06-04T21:26:18.8430722-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 76 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:18.8437390-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:20.0042684-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 76 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:20.0099625-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 77 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:26:20.0105862-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:26:21.1690602-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 77 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:26:21.1747674-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 78 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:21.1753874-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:22.3333401-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 78 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:22.3395116-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 79 of 108 to contato@rennovare.com.br
+2020-06-04T21:26:22.3401885-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:26:23.4965692-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 79 of 108 successfully sent to contato@rennovare.com.br
+2020-06-04T21:26:23.5022834-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 80 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:23.5029215-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:24.6651234-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 80 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:24.6709509-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 81 of 108 to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:26:24.6715843-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:26:25.8406611-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 81 of 108 successfully sent to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:26:25.8462805-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 82 of 108 to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:26:25.8469224-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:26:27.0045805-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 82 of 108 successfully sent to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:26:27.0102906-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 83 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:27.0109111-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:28.1672872-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 83 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:28.1729969-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 84 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:26:28.1736444-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:26:29.3302690-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 84 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:26:29.3376892-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 85 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:29.3383292-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:30.4985162-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 85 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:30.5041606-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 86 of 108 to alexandre.abrepresenta@gmail.com
+2020-06-04T21:26:30.5047891-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-06-04T21:26:31.6665948-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 86 of 108 successfully sent to alexandre.abrepresenta@gmail.com
+2020-06-04T21:26:31.6723169-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 87 of 108 to vendas@bellaitalia.com.br
+2020-06-04T21:26:31.6729448-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:26:32.8395202-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 87 of 108 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:26:32.8455023-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 88 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:32.8461752-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:34.0210888-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 88 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:34.0273297-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 89 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:34.0279718-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:35.1984082-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 89 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:35.2041277-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 90 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:35.2047793-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:36.3718974-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 90 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:36.3778304-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 91 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:36.3784495-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:37.5541088-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 91 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:37.5597561-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 92 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:37.5603609-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:38.7198257-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 92 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:38.7253708-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 93 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:38.7260418-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:39.8970962-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 93 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:39.9033563-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 94 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:39.9040215-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:41.0683315-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 94 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:41.0739951-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 95 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:41.0746230-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:42.2399557-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 95 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:42.2458149-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 96 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:42.2465132-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:43.4033698-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 96 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:43.4091377-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 97 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:26:43.4097762-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:26:44.5703402-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 97 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:26:44.5761711-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 98 of 108 to vendas@bellaitalia.com.br
+2020-06-04T21:26:44.5767910-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:26:45.7332195-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 98 of 108 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:26:45.7390833-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 99 of 108 to uerba.rep@terra.com.br
+2020-06-04T21:26:45.7397367-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to uerba.rep@terra.com.br
+2020-06-04T21:26:46.9005157-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 99 of 108 successfully sent to uerba.rep@terra.com.br
+2020-06-04T21:26:46.9060875-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 100 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:46.9067335-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:48.0704301-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 100 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:48.0761181-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 101 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:26:48.0767853-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:26:49.2452328-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 101 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:26:49.2509928-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 102 of 108 to ana.cadence@gmail.com
+2020-06-04T21:26:49.2516673-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-06-04T21:26:50.4140720-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 102 of 108 successfully sent to ana.cadence@gmail.com
+2020-06-04T21:26:50.4197845-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 103 of 108 to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:50.4204232-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:51.5882562-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 103 of 108 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:26:51.5939041-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 104 of 108 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:51.5945396-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:52.7699212-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 104 of 108 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:26:52.7756634-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 105 of 108 to d.moser@terra.com.br
+2020-06-04T21:26:52.7763212-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to d.moser@terra.com.br
+2020-06-04T21:26:53.9411691-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 105 of 108 successfully sent to d.moser@terra.com.br
+2020-06-04T21:26:53.9469449-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 106 of 108 to sandra@jnorberto.com.br
+2020-06-04T21:26:53.9475817-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:26:55.1148183-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 106 of 108 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:26:55.1206265-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 107 of 108 to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:55.1212456-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:56.2833059-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 107 of 108 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:26:56.2889890-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 108 of 108 to cordeirorepresenta@gmail.com
+2020-06-04T21:26:56.2896296-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresenta@gmail.com
+2020-06-04T21:26:57.4462064-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 108 of 108 successfully sent to cordeirorepresenta@gmail.com
+2020-06-04T21:26:57.7206054-03:00 [INF] (buying_order_server.Services.AbstractCronJob) CRON job 0/60 * * * * * cycle 1 successfully executed!
+2020-06-04T21:43:47.3943455-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-06-04T21:43:50.2468908-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status subscriber initialized.
+2020-06-04T21:43:50.2607212-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:43:50.2628068-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T21:43:50.2638462-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:43:50.2647393-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T21:43:50.2667954-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:43:50.2694298-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-06-04T21:43:56.5766709-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: GET http localhost:5000/api/v1/app-management/execution-status   
+                                                     Responded with [200] in 111ms
+2020-06-04T21:49:42.0346120-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-06-04T21:49:44.9085142-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status subscriber initialized.
+2020-06-04T21:49:44.9220308-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:49:44.9239805-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T21:49:44.9250660-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:49:44.9261537-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T21:49:44.9286118-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:49:44.9327455-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-06-04T21:51:42.5407327-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-06-04T21:51:45.3707727-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status subscriber initialized.
+2020-06-04T21:51:45.3844813-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:51:45.3864556-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T21:51:45.3874453-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:51:45.3882774-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T21:51:45.3902159-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:51:45.3928385-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-06-04T21:52:04.7281730-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Initializing
+2020-06-04T21:52:04.7290957-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:52:04.7845239-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed SchedulerRunning
+2020-06-04T21:52:04.7852942-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T21:52:04.8667712-03:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] 
+                                                     Request: POST http localhost:5000/api/v1/app-management/start-scheduler  {} 
+                                                     Responded with [200] in 167ms
+2020-06-04T21:52:17.4548836-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP connected
+2020-06-04T21:52:17.7394371-03:00 [INF] (buying_order_server.Services.AbstractCronJob) SMTP authenticated
+2020-06-04T21:52:17.7531383-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 1 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:17.7548577-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:18.9561374-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 1 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:18.9667627-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 2 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:52:18.9674258-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:52:20.0815517-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 2 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:52:20.0925426-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 3 of 105 to ana.cadence@gmail.com
+2020-06-04T21:52:20.0932558-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-06-04T21:52:21.2374886-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 3 of 105 successfully sent to ana.cadence@gmail.com
+2020-06-04T21:52:21.2439541-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 4 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:52:21.2448297-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:52:22.3519441-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 4 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:52:22.3573258-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 5 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:52:22.3579785-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:52:23.4627496-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 5 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:52:23.4683094-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 6 of 105 to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:23.4689777-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:24.5760810-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 6 of 105 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:24.5825566-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 7 of 105 to z.weber@uol.com.br
+2020-06-04T21:52:24.5833349-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:52:25.7063524-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 7 of 105 successfully sent to z.weber@uol.com.br
+2020-06-04T21:52:25.7136223-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 8 of 105 to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:25.7142730-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:26.8232967-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 8 of 105 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:26.8303298-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 9 of 105 to alexandre.abrepresenta@gmail.com
+2020-06-04T21:52:26.8309880-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-06-04T21:52:27.9391241-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 9 of 105 successfully sent to alexandre.abrepresenta@gmail.com
+2020-06-04T21:52:27.9490068-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 10 of 105 to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:27.9497149-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:29.0583444-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 10 of 105 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:29.0746442-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 11 of 105 to z.weber@uol.com.br
+2020-06-04T21:52:29.0753090-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:52:30.1832009-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 11 of 105 successfully sent to z.weber@uol.com.br
+2020-06-04T21:52:30.1885908-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 12 of 105 to vendas@bellaitalia.com.br
+2020-06-04T21:52:30.1892448-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:52:31.3038266-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 12 of 105 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:52:31.3092106-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 13 of 105 to z.weber@uol.com.br
+2020-06-04T21:52:31.3098359-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:52:32.4160814-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 13 of 105 successfully sent to z.weber@uol.com.br
+2020-06-04T21:52:32.4216050-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 14 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:52:32.4222566-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:52:33.5285925-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 14 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:52:33.5357980-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 15 of 105 to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:33.5366842-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:34.6475938-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 15 of 105 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:34.6535929-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 16 of 105 to vendas@bellaitalia.com.br
+2020-06-04T21:52:34.6543552-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:52:35.7714907-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 16 of 105 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:52:35.7770181-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 17 of 105 to alexandre.abrepresenta@gmail.com
+2020-06-04T21:52:35.7776720-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-06-04T21:52:36.8843451-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 17 of 105 successfully sent to alexandre.abrepresenta@gmail.com
+2020-06-04T21:52:36.8930717-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 18 of 105 to z.weber@uol.com.br
+2020-06-04T21:52:36.8946379-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:52:38.0013941-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 18 of 105 successfully sent to z.weber@uol.com.br
+2020-06-04T21:52:38.0070771-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 19 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:38.0078165-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:39.1217306-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 19 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:39.1270900-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 20 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:52:39.1277356-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:52:40.2357208-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 20 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:52:40.2414082-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 21 of 105 to ana.cadence@gmail.com
+2020-06-04T21:52:40.2420947-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-06-04T21:52:41.3479454-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 21 of 105 successfully sent to ana.cadence@gmail.com
+2020-06-04T21:52:41.3537504-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 22 of 105 to vendas@bellaitalia.com.br
+2020-06-04T21:52:41.3544626-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:52:42.4602512-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 22 of 105 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:52:42.4656254-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 23 of 105 to willian.lima@interlight.com.br
+2020-06-04T21:52:42.4663440-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to willian.lima@interlight.com.br
+2020-06-04T21:52:43.5742257-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 23 of 105 successfully sent to willian.lima@interlight.com.br
+2020-06-04T21:52:43.5798922-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 24 of 105 to contato@rennovare.com.br
+2020-06-04T21:52:43.5805520-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:52:44.6897506-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 24 of 105 successfully sent to contato@rennovare.com.br
+2020-06-04T21:52:44.6984672-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 25 of 105 to impacta@impactarep.com.br
+2020-06-04T21:52:44.7000598-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to impacta@impactarep.com.br
+2020-06-04T21:52:45.8085105-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 25 of 105 successfully sent to impacta@impactarep.com.br
+2020-06-04T21:52:45.8138784-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 26 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:45.8145187-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:46.9245206-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 26 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:46.9299820-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 27 of 105 to z.weber@uol.com.br
+2020-06-04T21:52:46.9306331-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:52:48.0335306-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 27 of 105 successfully sent to z.weber@uol.com.br
+2020-06-04T21:52:48.0391953-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 28 of 105 to z.weber@uol.com.br
+2020-06-04T21:52:48.0398913-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:52:49.1406302-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 28 of 105 successfully sent to z.weber@uol.com.br
+2020-06-04T21:52:49.1461835-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 29 of 105 to vendasbeg@terra.com.br
+2020-06-04T21:52:49.1468368-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasbeg@terra.com.br
+2020-06-04T21:52:50.2487492-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 29 of 105 successfully sent to vendasbeg@terra.com.br
+2020-06-04T21:52:50.2542246-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 30 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:52:50.2549095-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:52:51.3578780-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 30 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:52:51.3636956-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 31 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:51.3643698-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:52.4750004-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 31 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:52:52.4804189-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 32 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:52:52.4810602-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:52:53.5877635-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 32 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:52:53.5935366-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 33 of 105 to vendas@reyam.com.br
+2020-06-04T21:52:53.5942072-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@reyam.com.br
+2020-06-04T21:52:54.7008055-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 33 of 105 successfully sent to vendas@reyam.com.br
+2020-06-04T21:52:54.7061520-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 34 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:52:54.7068896-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:52:55.8162517-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 34 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:52:55.8216571-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 35 of 105 to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:55.8223338-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:56.9289972-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 35 of 105 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:56.9345172-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 36 of 105 to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:56.9351760-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:58.0412328-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 36 of 105 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:52:58.0466132-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 37 of 105 to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:52:58.0472451-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:52:59.1518520-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 37 of 105 successfully sent to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:52:59.1579224-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 38 of 105 to contato@rennovare.com.br
+2020-06-04T21:52:59.1585980-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:53:00.2622387-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 38 of 105 successfully sent to contato@rennovare.com.br
+2020-06-04T21:53:00.2678290-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 39 of 105 to contato@rennovare.com.br
+2020-06-04T21:53:00.2684889-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:53:01.3842348-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 39 of 105 successfully sent to contato@rennovare.com.br
+2020-06-04T21:53:01.3897010-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 40 of 105 to vendasbeg@terra.com.br
+2020-06-04T21:53:01.3903471-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasbeg@terra.com.br
+2020-06-04T21:53:02.4928953-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 40 of 105 successfully sent to vendasbeg@terra.com.br
+2020-06-04T21:53:02.4982366-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 41 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:53:02.4988843-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:53:03.6087947-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 41 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:53:03.6141113-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 42 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:03.6147562-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:04.7180086-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 42 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:04.7233358-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 43 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:04.7240115-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:05.8269074-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 43 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:05.8323139-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 44 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:05.8329509-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:06.9401642-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 44 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:06.9550082-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 45 of 105 to uerba.rep@terra.com.br
+2020-06-04T21:53:06.9556733-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to uerba.rep@terra.com.br
+2020-06-04T21:53:08.0637694-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 45 of 105 successfully sent to uerba.rep@terra.com.br
+2020-06-04T21:53:08.0691565-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 46 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:53:08.0698009-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:53:09.1707689-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 46 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:53:09.1760920-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 47 of 105 to contato@rennovare.com.br
+2020-06-04T21:53:09.1767652-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:53:10.2833185-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 47 of 105 successfully sent to contato@rennovare.com.br
+2020-06-04T21:53:10.2888261-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 48 of 105 to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:10.2894755-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:11.3952438-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 48 of 105 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:11.4007995-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 49 of 105 to michelle@eletrohil.com.br
+2020-06-04T21:53:11.4014947-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to michelle@eletrohil.com.br
+2020-06-04T21:53:12.5095607-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 49 of 105 successfully sent to michelle@eletrohil.com.br
+2020-06-04T21:53:12.5149925-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 50 of 105 to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:12.5156243-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:13.6370983-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 50 of 105 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:13.6424179-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 51 of 105 to vendasbeg@terra.com.br
+2020-06-04T21:53:13.6430601-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasbeg@terra.com.br
+2020-06-04T21:53:14.7486009-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 51 of 105 successfully sent to vendasbeg@terra.com.br
+2020-06-04T21:53:14.7816793-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 52 of 105 to z.weber@uol.com.br
+2020-06-04T21:53:14.7824298-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:53:15.8871385-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 52 of 105 successfully sent to z.weber@uol.com.br
+2020-06-04T21:53:15.8925096-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 53 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:15.8931829-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:17.0017100-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 53 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:17.0072959-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 54 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:17.0079642-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:18.1366378-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 54 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:18.1420560-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 55 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:18.1426908-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:19.2476342-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 55 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:19.2529887-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 56 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:19.2536234-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:20.3624822-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 56 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:20.3680055-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 57 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:20.3686926-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:21.4742869-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 57 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:21.4797005-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 58 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:21.4803519-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:22.5981787-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 58 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:22.6038249-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 59 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:22.6045385-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:23.7036738-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 59 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:23.7092767-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 60 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:23.7099217-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:24.8200187-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 60 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:24.8253602-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 61 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:24.8259915-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:25.9581630-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 61 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:25.9636633-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 62 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:25.9643028-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:27.0699765-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 62 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:27.0754957-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 63 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:27.0761718-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:28.1829771-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 63 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:28.1884704-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 64 of 105 to uerba.rep@terra.com.br
+2020-06-04T21:53:28.1891150-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to uerba.rep@terra.com.br
+2020-06-04T21:53:29.2960060-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 64 of 105 successfully sent to uerba.rep@terra.com.br
+2020-06-04T21:53:29.3059965-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 65 of 105 to ana.cadence@gmail.com
+2020-06-04T21:53:29.3066665-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-06-04T21:53:30.4139791-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 65 of 105 successfully sent to ana.cadence@gmail.com
+2020-06-04T21:53:30.4193698-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 66 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:53:30.4199991-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:53:31.5405888-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 66 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:53:31.5459705-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 67 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:31.5466298-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:32.6521115-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 67 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:32.6575511-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 68 of 105 to contato@rennovare.com.br
+2020-06-04T21:53:32.6584048-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:53:33.7627645-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 68 of 105 successfully sent to contato@rennovare.com.br
+2020-06-04T21:53:33.7681533-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 69 of 105 to impacta@impactarep.com.br
+2020-06-04T21:53:33.7687947-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to impacta@impactarep.com.br
+2020-06-04T21:53:34.8775094-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 69 of 105 successfully sent to impacta@impactarep.com.br
+2020-06-04T21:53:34.8829117-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 70 of 105 to alexandre.abrepresenta@gmail.com
+2020-06-04T21:53:34.8835753-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-06-04T21:53:35.9861059-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 70 of 105 successfully sent to alexandre.abrepresenta@gmail.com
+2020-06-04T21:53:35.9915468-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 71 of 105 to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:35.9921938-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:37.0929647-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 71 of 105 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:37.1044402-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 72 of 105 to ana.cadence@gmail.com
+2020-06-04T21:53:37.1051055-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to ana.cadence@gmail.com
+2020-06-04T21:53:38.2083706-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 72 of 105 successfully sent to ana.cadence@gmail.com
+2020-06-04T21:53:38.2137559-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 73 of 105 to willian.lima@interlight.com.br
+2020-06-04T21:53:38.2143929-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to willian.lima@interlight.com.br
+2020-06-04T21:53:39.3200438-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 73 of 105 successfully sent to willian.lima@interlight.com.br
+2020-06-04T21:53:39.3254464-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 74 of 105 to vendasbeg@terra.com.br
+2020-06-04T21:53:39.3260911-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasbeg@terra.com.br
+2020-06-04T21:53:40.4279945-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 74 of 105 successfully sent to vendasbeg@terra.com.br
+2020-06-04T21:53:40.4334077-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 75 of 105 to z.weber@uol.com.br
+2020-06-04T21:53:40.4340507-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to z.weber@uol.com.br
+2020-06-04T21:53:41.5413412-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 75 of 105 successfully sent to z.weber@uol.com.br
+2020-06-04T21:53:41.5468424-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 76 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:41.5474765-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:42.6534121-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 76 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:42.6589088-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 77 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:53:42.6595511-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:53:43.7851244-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 77 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:53:43.7912646-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 78 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:43.7919162-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:44.8970061-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 78 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:44.9023046-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 79 of 105 to contato@rennovare.com.br
+2020-06-04T21:53:44.9029448-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to contato@rennovare.com.br
+2020-06-04T21:53:46.0095083-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 79 of 105 successfully sent to contato@rennovare.com.br
+2020-06-04T21:53:46.0150155-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 80 of 105 to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:46.0156706-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:47.1212230-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 80 of 105 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:47.1266645-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 81 of 105 to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:53:47.1273060-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:53:48.2269573-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 81 of 105 successfully sent to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:53:48.2324764-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 82 of 105 to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:53:48.2331143-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:53:49.3424455-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 82 of 105 successfully sent to vendas@barthelrepresentacoes.com.br
+2020-06-04T21:53:49.3478648-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 83 of 105 to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:49.3485271-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:50.4586015-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 83 of 105 successfully sent to vendasemporiodaluz@gmail.com
+2020-06-04T21:53:50.4641430-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 84 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:53:50.4647698-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:53:51.5727106-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 84 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:53:51.5781222-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 85 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:51.5787673-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:52.6848416-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 85 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:53:52.6903247-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 86 of 105 to alexandre.abrepresenta@gmail.com
+2020-06-04T21:53:52.6909721-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to alexandre.abrepresenta@gmail.com
+2020-06-04T21:53:53.8004160-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 86 of 105 successfully sent to alexandre.abrepresenta@gmail.com
+2020-06-04T21:53:53.8060041-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 87 of 105 to vendas@bellaitalia.com.br
+2020-06-04T21:53:53.8066804-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas@bellaitalia.com.br
+2020-06-04T21:53:54.9151555-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 87 of 105 successfully sent to vendas@bellaitalia.com.br
+2020-06-04T21:53:54.9205713-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 88 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:54.9212805-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:56.0453476-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 88 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:56.0508423-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 89 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:56.0514881-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:57.1587199-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 89 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:57.1643567-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 90 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:57.1649920-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:58.2683034-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 90 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:58.2738689-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 91 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:58.2745474-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:59.3826207-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 91 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:59.3882211-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 92 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:53:59.3888741-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:00.4977976-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 92 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:00.5031111-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 93 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:00.5037515-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:01.6098477-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 93 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:01.6153747-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 94 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:01.6160148-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:02.7187847-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 94 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:02.7242321-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 95 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:54:02.7248677-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:54:03.8274746-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 95 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:54:03.8328813-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 96 of 105 to uerba.rep@terra.com.br
+2020-06-04T21:54:03.8335638-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to uerba.rep@terra.com.br
+2020-06-04T21:54:04.9362894-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 96 of 105 successfully sent to uerba.rep@terra.com.br
+2020-06-04T21:54:04.9417960-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 97 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:54:04.9424453-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:54:06.0474700-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 97 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:54:06.0530458-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 98 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:54:06.0536894-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:54:07.1641365-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 98 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:54:07.1696343-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 99 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:54:07.1703061-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:54:08.2787870-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 99 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:54:08.2846487-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 100 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:08.2853913-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:09.3925791-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 100 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:09.3980492-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 101 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:09.3986991-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:10.5004421-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 101 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:10.5061072-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 102 of 105 to cordeirorepresentabnu@gmail.com
+2020-06-04T21:54:10.5067614-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to cordeirorepresentabnu@gmail.com
+2020-06-04T21:54:11.6147342-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 102 of 105 successfully sent to cordeirorepresentabnu@gmail.com
+2020-06-04T21:54:11.6201957-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 103 of 105 to d.moser@terra.com.br
+2020-06-04T21:54:11.6208824-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to d.moser@terra.com.br
+2020-06-04T21:54:12.7262639-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 103 of 105 successfully sent to d.moser@terra.com.br
+2020-06-04T21:54:12.7316814-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 104 of 105 to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:12.7323201-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:13.8437099-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 104 of 105 successfully sent to vendas.vipsc2005@gmail.com
+2020-06-04T21:54:13.8490403-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail 105 of 105 to sandra@jnorberto.com.br
+2020-06-04T21:54:13.8496817-03:00 [INF] (buying_order_server.Services.AbstractCronJob) Sending e-mail to sandra@jnorberto.com.br
+2020-06-04T21:54:14.9619594-03:00 [INF] (buying_order_server.Services.AbstractCronJob) E-mail 105 of 105 successfully sent to sandra@jnorberto.com.br
+2020-06-04T21:54:15.2270372-03:00 [INF] (buying_order_server.Services.AbstractCronJob) CRON job 0/60 * * * * * cycle 1 successfully executed!
+2020-06-04T22:11:08.5785554-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-06-04T22:11:11.8339082-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status subscriber initialized.
+2020-06-04T22:11:11.8475091-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T22:11:11.8494874-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T22:11:11.8505061-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T22:11:11.8513648-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T22:11:11.8522889-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T22:11:11.8546687-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-06-04T22:12:06.6575076-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-06-04T22:12:09.5442771-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status subscriber initialized.
+2020-06-04T22:12:09.5575100-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T22:12:09.5594022-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T22:12:09.5604234-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T22:12:09.5612294-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T22:12:09.5620886-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T22:12:09.5655287-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed
+2020-06-04T22:13:15.5421507-03:00 [INF] (buying_order_server.Program) Starting web host
+2020-06-04T22:13:18.4215798-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status subscriber initialized.
+2020-06-04T22:13:18.4348941-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T22:13:18.4368917-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T22:13:18.4378982-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T22:13:18.4387245-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status changed Online
+2020-06-04T22:13:18.4395575-03:00 [INF] (buying_order_server.Services.AppExecutionStatusManager) Execution status hub message being send
+2020-06-04T22:13:18.4430569-03:00 [INF] (buying_order_server.API.v1.AppExecutionStatusHub) Status Hub Disposed

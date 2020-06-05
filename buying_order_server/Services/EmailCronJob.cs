@@ -3,7 +3,9 @@ using buying_order_server.Data.Entity;
 using buying_order_server.DTO.Response;
 using buying_order_server.Exceptions;
 using MailKit.Net.Smtp;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MimeKit;
 using System;
@@ -53,14 +55,16 @@ namespace buying_order_server.Services
         private int _executionCount = 0;
         private IAppExecutionStatusManager _executionStatusManger;
         private SmtpClient _smtpClient;
+        private IWebHostEnvironment _env;
 
 
-        public EmailCronJob(ILogger<AbstractCronJob> logger, IAppConfigurationRepository appConfigsRepo, IBuyingOrdersManager ordersManager, IConfiguration config, IAppExecutionStatusManager executionStatusManger) : base(logger, executionStatusManger)
+        public EmailCronJob(ILogger<AbstractCronJob> logger, IAppConfigurationRepository appConfigsRepo, IBuyingOrdersManager ordersManager, IConfiguration config, IAppExecutionStatusManager executionStatusManger, IWebHostEnvironment env) : base(logger, executionStatusManger)
         {
             _appConfigsRepo = appConfigsRepo;
             _ordersManager = ordersManager;
             _config = config;
             _executionStatusManger = executionStatusManger;
+            _env = env;
         }
 
         protected override async Task DoWork(CancellationToken cancellationToken)
@@ -176,9 +180,13 @@ namespace buying_order_server.Services
                 _logger.LogInformation($"Sending e-mail to {configs.destinationEmail}");
                 var mimeMsg = new MimeMessage();
                 mimeMsg.From.Add(new MailboxAddress(configs.senderName, configs.senderEmail));
-                if (bool.Parse(_config["Email:UseTestRecipient"]))
+                if (bool.Parse(_config["Email:UseTestRecipient"]) || _env.IsDevelopment())
                 {
                     mimeMsg.To.Add(new MailboxAddress(_config["Email:TestRecipient"]));
+                }
+                else
+                {
+                    mimeMsg.To.Add(new MailboxAddress(configs.destinationEmail));
                 }
                 mimeMsg.Subject = configs.subject;
                 var bb = new BodyBuilder
@@ -211,11 +219,21 @@ namespace buying_order_server.Services
 
             if (this._dbConfigs.AppReplyLink != null)
             {
-                var link = $"{this._dbConfigs.AppReplyLink}?orderid={order.Id}";
+                var link = "";
+                if (_env.IsDevelopment())
+                {
+                    link = $"http://localhost:4201?orderid={order.Id}";
+                }
+                else
+                {
+                    link = $"{this._dbConfigs.AppReplyLink}?orderid={order.Id}";
+                }
                 if (html)
                 {
-                    ret = new Regex(@"\$\{replyLink\}")
-                        .Replace(ret, $"<a href=\"{link}\" target=\"_blank\">Clique aqui para informar uma nova data.</a>");
+                    ret = new Regex(@"\$\{replyLinkBegin\}")
+                        .Replace(ret, $"<a href=\"{link}\" target=\"_blank\">");
+                    ret = new Regex(@"\$\{replyLinkEnd\}")
+                        .Replace(ret, $"</a>");
                 }
                 else
                 {
