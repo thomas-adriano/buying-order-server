@@ -47,7 +47,7 @@ namespace buying_order_server.Data.Repository
             return data;
         }
 
-        public async Task<bool> CreateAsync(AppConfiguration entity)
+        public async Task<AppConfiguration> CreateOrUpdateAsync(AppConfiguration entity)
         {
             var stmt = @"INSERT INTO ""AppConfiguration"" 
                             (""AppBlacklist"", ""AppCronPattern"", ""AppEmailFrom"",
@@ -76,15 +76,11 @@ namespace buying_order_server.Data.Repository
             parameters.Add("AppSMTPSecure", entity.AppSMTPSecure);
             parameters.Add("AppSMTPAddress", entity.AppSMTPAddress);
 
-            return await DbExecuteAsync<AppConfiguration>(stmt, parameters);
+            await DbExecuteAsync<AppConfiguration>(stmt, parameters);
+            return entity;
         }
 
         public Task<AppConfiguration> GetByIdAsync(object id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> UpdateAsync(AppConfiguration entity)
         {
             throw new NotImplementedException();
         }

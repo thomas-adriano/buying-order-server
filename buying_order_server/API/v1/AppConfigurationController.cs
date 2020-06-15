@@ -27,11 +27,11 @@ namespace buying_order_server.API.v1
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(AppConfigurationResponse), Status200OK)]
-        public async Task<AppConfigurationResponse> Get()
+        [ProducesResponseType(typeof(CreateOrUpdateAppConfigurationResponse), Status200OK)]
+        public async Task<CreateOrUpdateAppConfigurationResponse> Get()
         {
             var data = await _appConfigurationRepository.GetLastAsync();
-            var config = _mapper.Map<AppConfigurationResponse>(data);
+            var config = _mapper.Map<CreateOrUpdateAppConfigurationResponse>(data);
             _logger.LogDebug(config.ToString());
             return config;
         }
@@ -45,7 +45,7 @@ namespace buying_order_server.API.v1
             if (!ModelState.IsValid) { throw new ApiProblemDetailsException(ModelState); }
 
             var config = _mapper.Map<AppConfiguration>(createRequest);
-            return new ApiResponse("Record successfully created.", await _appConfigurationRepository.CreateAsync(config), Status201Created);
+            return new ApiResponse("Record successfully created.", await _appConfigurationRepository.CreateOrUpdateAsync(config), Status201Created);
         }
     }
 }

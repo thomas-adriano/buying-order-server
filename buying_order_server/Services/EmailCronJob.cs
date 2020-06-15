@@ -200,7 +200,7 @@ namespace buying_order_server.Services
             }
             catch (Exception e)
             {
-                throw new AppEmailException($"There was an error trying to send e-mail to {configs.destinationEmail}", e);
+                _logger.LogError($"There was an error trying to send e-mail to {configs.destinationEmail}", e);
             }
         }
 

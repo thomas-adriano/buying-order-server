@@ -1,7 +1,12 @@
-﻿using AutoWrapper.Wrappers;
+﻿using AutoMapper;
+using AutoWrapper.Wrappers;
+using buying_order_server.Contracts;
+using buying_order_server.Data.Entity;
 using buying_order_server.DTO.Request;
+using buying_order_server.DTO.Response;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
 using static Microsoft.AspNetCore.Http.StatusCodes;
 
 namespace buying_order_server.API.v1
@@ -12,19 +17,24 @@ namespace buying_order_server.API.v1
     {
 
         private readonly ILogger<OrderController> _logger;
+        private IPostponedOrderRepository _repo;
+        private IMapper _mapper;
 
-        public OrderController(ILogger<OrderController> logger)
+        public OrderController(ILogger<OrderController> logger, IPostponedOrderRepository repo, IMapper mapper)
         {
             _logger = logger;
+            _repo = repo;
+            _mapper = mapper;
         }
 
         [Route("update-date")]
         [HttpPost]
         [ProducesResponseType(typeof(ApiResponse), Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), Status422UnprocessableEntity)]
-        public ApiResponse updateDate([FromBody] UpdateOrderDateRequest update)
+        public async Task<ApiResponse> updateDate([FromBody] CreateOrUpdatePostponeOrderRequest update)
         {
-            return new ApiResponse(update);
+            var order = await _repo.CreateOrUpdateAsync(_mapper.Map<PostponedOrder>(update));
+            return new ApiResponse(_mapper.Map<CreateOrUpdatePostponedOrderResponse>(order));
         }
 
     }

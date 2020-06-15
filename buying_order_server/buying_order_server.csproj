@@ -6,9 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Infrastructure\Handlers\**" />
     <Compile Remove="Infrastructure\HealthChecks\Db\**" />
+    <Content Remove="Infrastructure\Handlers\**" />
     <Content Remove="Infrastructure\HealthChecks\Db\**" />
+    <EmbeddedResource Remove="Infrastructure\Handlers\**" />
     <EmbeddedResource Remove="Infrastructure\HealthChecks\Db\**" />
+    <None Remove="Infrastructure\Handlers\**" />
     <None Remove="Infrastructure\HealthChecks\Db\**" />
   </ItemGroup>
 
@@ -53,7 +57,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Infrastructure\Handlers\" />
     <Folder Include="Logs\" />
     <Folder Include="Logs\Error\" />
     <Folder Include="Logs\Info\" />

@@ -9,8 +9,7 @@ namespace buying_order_server.Contracts
         Task<IEnumerable<T>> GetAllAsync();
         Task<T> GetLastAsync();
         Task<T> GetByIdAsync(object id);
-        Task<bool> CreateAsync(T entity);
-        Task<bool> UpdateAsync(T entity);
+        Task<T> CreateOrUpdateAsync(T entity);
         Task<bool> DeleteAsync(object id);
         Task<bool> ExistAsync(object id);
     }
