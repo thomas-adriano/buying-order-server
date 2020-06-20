@@ -7,7 +7,7 @@ namespace buying_order_server.Contracts
 {
     public interface IOrdersApi
     {
-        public Task<IEnumerable<BuyingOrdersResponse>> GetBuyingOrdersAsync(CancellationToken cancellationToken);
-        public Task<ProviderResponse> GetProviderByIdAsync(string providerId, CancellationToken cancellationToken);
+        public Task<List<BuyingOrdersResponse>> GetBuyingOrdersAsync(CancellationToken cancellationToken);
+        public Task<List<ProviderResponse>> GetProvidersAsync(CancellationToken cancellationToken);
     }
 }

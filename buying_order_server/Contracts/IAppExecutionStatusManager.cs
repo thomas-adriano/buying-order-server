@@ -12,5 +12,9 @@ namespace buying_order_server.Contracts
         public void ChangeExecutionStatus(AppExecutionStatuses status);
 
         public IObservable<AppExecutionStatuses> ExecutionStatusChanged();
+
+        public void setIsInEmailCycle(bool val);
+
+        public bool isInEmailCycle();
     }
 }

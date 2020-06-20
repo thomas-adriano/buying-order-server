@@ -22,7 +22,7 @@ namespace buying_order_server.Services
     {
         public string cron;
         public SmtpConfigs smtpConfigs;
-        public IEnumerable<EmailConfigs> emailConfigs;
+        public List<EmailConfigs> emailConfigs;
     }
 
     public struct SmtpConfigs
@@ -69,11 +69,21 @@ namespace buying_order_server.Services
 
         protected override async Task DoWork(CancellationToken cancellationToken)
         {
-            _logger.LogDebug("executing email sending routine");
-            await StartScheduler(cancellationToken);
+            if (_executionStatusManger.isInEmailCycle())
+            {
+                _logger.LogDebug("cannot start another email cycle. There is an email cycle already running");
+            }
+            else
+            {
+                _logger.LogDebug("executing email sending routine");
+                _executionStatusManger.setIsInEmailCycle(true);
+                await StartScheduler(cancellationToken);
+            }
+
         }
         protected override async Task StopWork()
         {
+            _executionStatusManger.setIsInEmailCycle(false);
             if (_smtpClient != null)
             {
                 try
@@ -114,7 +124,7 @@ namespace buying_order_server.Services
 
 
 
-            emailSchedulerCfg.emailConfigs = ordersAndProviders.Select(e =>
+            emailSchedulerCfg.emailConfigs = ordersAndProviders.ConvertAll(e =>
               {
                   var textContent = this.interpolateVariables(_dbConfigs.AppEmailText, e.Order, false);
                   var htmlContent = this.interpolateVariables(_dbConfigs.AppEmailHtml, e.Order, true);
@@ -133,6 +143,7 @@ namespace buying_order_server.Services
             await StartSendingEmailsAsync(emailSchedulerCfg.smtpConfigs, emailSchedulerCfg.emailConfigs, cancellationToken);
             _executionCount++;
             _logger.LogInformation($"CRON job {emailSchedulerCfg.cron} cycle {_executionCount} successfully executed!");
+            _executionStatusManger.setIsInEmailCycle(false);
         }
 
         private async Task StartSendingEmailsAsync(SmtpConfigs smtpCfgs, IEnumerable<EmailConfigs> emailCfgs, CancellationToken cancellationToken)
@@ -147,9 +158,9 @@ namespace buying_order_server.Services
                 _logger.LogInformation($"SMTP authenticated");
                 foreach (EmailConfigs cfg in emailCfgs)
                 {
-                    _logger.LogInformation($"Sending e-mail {emailSendingCounter} of {emailCfgs.Count()} to {cfg.destinationEmail}");
                     try
                     {
+                        _logger.LogInformation($"Sending e-mail {emailSendingCounter} of {emailCfgs.Count()} to {cfg.destinationEmail}");
                         if (cancellationToken.IsCancellationRequested)
                         {
                             return;
@@ -222,11 +233,11 @@ namespace buying_order_server.Services
                 var link = "";
                 if (_env.IsDevelopment())
                 {
-                    link = $"http://localhost:4201?orderid={order.Id}";
+                    link = $"http://localhost:4201?orderid={order.NumeroPedido}";
                 }
                 else
                 {
-                    link = $"{this._dbConfigs.AppReplyLink}?orderid={order.Id}";
+                    link = $"{this._dbConfigs.AppReplyLink}?orderid={order.NumeroPedido}";
                 }
                 if (html)
                 {

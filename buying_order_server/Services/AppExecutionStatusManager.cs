@@ -18,6 +18,7 @@ namespace buying_order_server.Services
         private BehaviorSubject<AppExecutionStatuses> _executionStatusSubject = new BehaviorSubject<AppExecutionStatuses>(AppExecutionStatuses.Null);
         private IDisposable _executionStatusChangedSubscription;
         private IHubContext<AppExecutionStatusHub> _appStatusHubContext;
+        private bool _isInEmailCycle = false;
 
         public AppExecutionStatusManager(IHostApplicationLifetime hostApplicationLifetime, ILogger<AppExecutionStatusManager> logger, IHubContext<AppExecutionStatusHub> appStatusHubContext)
         {
@@ -86,6 +87,16 @@ namespace buying_order_server.Services
         public void Dispose()
         {
             _executionStatusChangedSubscription?.Dispose();
+        }
+
+        public void setIsInEmailCycle(bool val)
+        {
+            _isInEmailCycle = val;
+        }
+
+        public bool isInEmailCycle()
+        {
+            return _isInEmailCycle;
         }
 
     }

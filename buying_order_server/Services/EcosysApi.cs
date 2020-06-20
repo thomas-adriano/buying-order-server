@@ -20,18 +20,18 @@ namespace buying_order_server.Services
             _logger = logger;
         }
 
-        public async Task<IEnumerable<BuyingOrdersResponse>> GetBuyingOrdersAsync(CancellationToken cancellationToken)
+        public async Task<List<BuyingOrdersResponse>> GetBuyingOrdersAsync(CancellationToken cancellationToken)
         {
             if (cancellationToken.IsCancellationRequested)
             {
                 return null;
             }
-
-            var httpResponse = await _httpClient.GetAsync("/api/ordens-de-compra?situacoes=0", cancellationToken);
+            var endpoint = "/api/ordens-de-compra?situacoes=0";
+            var httpResponse = await _httpClient.GetAsync(endpoint, cancellationToken);
 
             if (!httpResponse.IsSuccessStatusCode)
             {
-                _logger.Log(LogLevel.Warning, $"[{httpResponse.StatusCode}] An error occured while requesting external api.");
+                _logger.Log(LogLevel.Warning, $"[{httpResponse.StatusCode}] An error occured while requesting external api {endpoint}");
                 return default;
             }
 
@@ -41,7 +41,7 @@ namespace buying_order_server.Services
             return data;
         }
 
-        public async Task<ProviderResponse> GetProviderByIdAsync(string providerId, CancellationToken cancellationToken)
+        public async Task<List<ProviderResponse>> GetProvidersAsync(CancellationToken cancellationToken)
         {
             if (cancellationToken.IsCancellationRequested)
             {
@@ -50,20 +50,22 @@ namespace buying_order_server.Services
 
             try
             {
-                var httpResponse = await _httpClient.GetAsync($"/api/fornecedores/{providerId}", cancellationToken);
+                var endpoint = $"/api/fornecedores";
+                var httpResponse = await _httpClient.GetAsync(endpoint, cancellationToken);
+
                 if (!httpResponse.IsSuccessStatusCode)
                 {
-                    _logger.Log(LogLevel.Warning, $"[{httpResponse.StatusCode}] An error occured while requesting external api.");
+                    _logger.Log(LogLevel.Warning, $"[{httpResponse.StatusCode}] An error occured while requesting external api {endpoint}");
                     return default;
                 }
 
                 var jsonString = await httpResponse.Content.ReadAsStringAsync();
                 var data = JsonSerializer.Deserialize<List<ProviderResponse>>(jsonString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-                return data[0];
+                return data;
             }
             catch (Exception e)
             {
-                _logger.LogError($"An error occurred trying to fetch provider {providerId}");
+                _logger.LogError($"An error occurred trying to fetch providers. {e.Message}\n {e.StackTrace}");
                 return null;
             }
 

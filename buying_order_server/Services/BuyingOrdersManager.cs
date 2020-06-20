@@ -27,62 +27,68 @@ namespace buying_order_server.Services
             _postponedOrderRepo = postponedOrderRepo;
         }
 
-        public async Task<IEnumerable<BuyingOrder>> getBuyingOrdersAsync(CancellationToken cancellationToken)
+        public async Task<List<BuyingOrder>> getBuyingOrdersAsync(CancellationToken cancellationToken)
         {
-            if (cancellationToken.IsCancellationRequested)
+            try
             {
-                return null;
-            }
-
-            var buyingOrders = await _ecosysApi.GetBuyingOrdersAsync(cancellationToken);
-            var ordersWithProviderId = buyingOrders.Where((order) =>
-               {
-                   return !String.IsNullOrEmpty(order.IdContato);
-               });
-
-            var notPostponedOrders = new List<BuyingOrdersResponse>();
-            foreach (BuyingOrdersResponse o in ordersWithProviderId)
-            {
-                if (o == null)
+                if (cancellationToken.IsCancellationRequested)
                 {
-                    continue;
+                    return null;
                 }
-                var postponed = await _postponedOrderRepo.GetByIdAsync(o.NumeroPedido);
-                if (postponed == null)
+
+                var buyingOrders = await _ecosysApi.GetBuyingOrdersAsync(cancellationToken);
+                var ordersWithProviderId = buyingOrders.FindAll((order) =>
+                   {
+                       return !String.IsNullOrEmpty(order.IdContato);
+                   });
+
+                var notPostponedOrders = new List<BuyingOrdersResponse>();
+                foreach (BuyingOrdersResponse o in ordersWithProviderId)
                 {
-                    notPostponedOrders.Add(o);
-                }
-                else
-                {
-                    var later = DateTime.Compare(DateTime.Now, postponed.Date) > 0;
-                    if (later)
+                    if (o == null)
+                    {
+                        continue;
+                    }
+                    var postponed = await _postponedOrderRepo.GetByIdAsync(o.NumeroPedido);
+                    if (postponed == null)
                     {
                         notPostponedOrders.Add(o);
                     }
+                    else
+                    {
+                        var later = DateTime.Compare(DateTime.Now, postponed.Date) > 0;
+                        if (later)
+                        {
+                            notPostponedOrders.Add(o);
+                        }
+                    }
                 }
-            }
 
-            IEnumerable<BuyingOrder> ordersAndProviders;
+                List<BuyingOrder> ordersAndProviders;
 
-            ordersAndProviders = await Task.Run(async () =>
-            {
-                var providers = await Task.WhenAll(
-                notPostponedOrders
-                    .Select(e => _ecosysApi.GetProviderByIdAsync(e.IdContato, cancellationToken))
-                    .Where(e => e != null)
-                );
-
-                return providers
-                .Where(o => o != null && !String.IsNullOrEmpty(o.Email))
-                .Select(p =>
+                ordersAndProviders = await Task.Run(async () =>
                 {
-                    var order = notPostponedOrders.Where(o => o.IdContato == p.Id).First();
-                    return new BuyingOrder { Provider = p, Order = notPostponedOrders.Where(o => o.IdContato == p.Id).First() };
-                });
-            }
-            , cancellationToken);
+                    var providers = await _ecosysApi.GetProvidersAsync(cancellationToken);
 
-            return ordersAndProviders;
+                    return providers
+                        .FindAll(p => p != null && !String.IsNullOrEmpty(p.Email))
+                        .ConvertAll(p =>
+                        {
+                            var order = notPostponedOrders.FindAll(o => o.IdContato == p.Id).FirstOrDefault();
+                            return new BuyingOrder { Provider = p, Order = order };
+                        });
+                }
+                , cancellationToken);
+
+                ordersAndProviders = ordersAndProviders.FindAll(o => o.Order != null && o.Provider != null);
+
+                return ordersAndProviders;
+            }
+            catch (Exception e)
+            {
+                _logger.LogError($"An error occurred while trying to create BuyingOrders list. {e.Message}");
+            }
+            return new List<BuyingOrder>();
         }
     }
 }

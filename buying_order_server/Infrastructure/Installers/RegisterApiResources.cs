@@ -17,7 +17,7 @@ namespace buying_order_server.Infrastructure.Installers
     {
         public void RegisterAppServices(IServiceCollection services, IConfiguration config)
         {
-            var policyConfigs = new HttpClientPolicyConfiguration();
+            var policyConfigs = new HttpClientPolicyConfiguration() { RetryTimeoutInSeconds = 3, RetryDelayInMs = 3000, RetryCount = 3, MaxAttemptBeforeBreak = 3, BreakDurationInSeconds = 3};
             config.Bind("HttpClientPolicies", policyConfigs);
 
             var timeoutPolicy = Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(policyConfigs.RetryTimeoutInSeconds));
