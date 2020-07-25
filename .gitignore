@@ -1,3 +1,4 @@
+healthchecksdb
 *.swp
 *.*~
 project.lock.json
