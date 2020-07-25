@@ -26,10 +26,10 @@ namespace buying_order_server.API.v1
 
         [Route("execution-status")]
         [HttpGet]
-        [ProducesResponseType(typeof(ExecutionStatusResponse), Status200OK)]
-        public ExecutionStatusResponse GetExecutionStatus()
+        [ProducesResponseType(typeof(ExecutionStatusDTO), Status200OK)]
+        public ExecutionStatusDTO GetExecutionStatus()
         {
-            var res = new ExecutionStatusResponse();
+            var res = new ExecutionStatusDTO();
             res.Status = _executionStatusManager.GetExecutionStatus();
             return res;
         }

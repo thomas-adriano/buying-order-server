@@ -1,5 +1,6 @@
 ﻿using buying_order_server.Contracts;
 using buying_order_server.Infrastructure.Filters;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
@@ -8,7 +9,7 @@ namespace buying_order_server.Infrastructure.Installers
 {
     internal class RegisterSwagger : IServiceRegistration
     {
-        public void RegisterAppServices(IServiceCollection services, IConfiguration config)
+        public void RegisterAppServices(IServiceCollection services, IConfiguration config, IWebHostEnvironment env)
         {
             //Register Swagger
             //See: https://www.scottbrady91.com/Identity-Server/ASPNET-Core-Swagger-UI-Authorization-using-IdentityServer4

@@ -48,7 +48,7 @@ namespace buying_order_server.Services
 
     public class EmailCronJob : AbstractCronJob
     {
-        private AppConfiguration _dbConfigs;
+        private AppConfigurationEntity _dbConfigs;
         private IAppConfigurationRepository _appConfigsRepo;
         private IBuyingOrdersManager _ordersManager;
         private IConfiguration _config;
@@ -215,7 +215,7 @@ namespace buying_order_server.Services
             }
         }
 
-        private string interpolateVariables(string content, BuyingOrdersResponse order, bool html)
+        private string interpolateVariables(string content, BuyingOrdersDTO order, bool html)
         {
             var ret = new Regex(@"\$\{providerName\}")
                 .Replace(content, order.NomeContato);

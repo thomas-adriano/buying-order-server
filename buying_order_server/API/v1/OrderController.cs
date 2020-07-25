@@ -31,10 +31,10 @@ namespace buying_order_server.API.v1
         [HttpPost]
         [ProducesResponseType(typeof(ApiResponse), Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), Status422UnprocessableEntity)]
-        public async Task<ApiResponse> updateDate([FromBody] CreateOrUpdatePostponeOrderRequest update)
+        public async Task<ApiResponse> updateDate([FromBody] PostponedOrderDTO update)
         {
-            var order = await _repo.CreateOrUpdateAsync(_mapper.Map<PostponedOrder>(update));
-            return new ApiResponse(_mapper.Map<CreateOrUpdatePostponedOrderResponse>(order));
+            var order = await _repo.CreateOrUpdateAsync(_mapper.Map<PostponedOrderEntity>(update));
+            return new ApiResponse(_mapper.Map<PostponedOrderDTO>(order));
         }
 
     }

@@ -27,11 +27,11 @@ namespace buying_order_server.API.v1
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(CreateOrUpdateAppConfigurationResponse), Status200OK)]
-        public async Task<CreateOrUpdateAppConfigurationResponse> Get()
+        [ProducesResponseType(typeof(AppConfigurationDTO), Status200OK)]
+        public async Task<AppConfigurationDTO> Get()
         {
             var data = await _appConfigurationRepository.GetLastAsync();
-            var config = _mapper.Map<CreateOrUpdateAppConfigurationResponse>(data);
+            var config = _mapper.Map<AppConfigurationDTO>(data);
             _logger.LogDebug(config.ToString());
             return config;
         }
@@ -40,11 +40,11 @@ namespace buying_order_server.API.v1
         [HttpPost]
         [ProducesResponseType(typeof(ApiResponse), Status201Created)]
         [ProducesResponseType(typeof(ApiResponse), Status422UnprocessableEntity)]
-        public async Task<ApiResponse> Post([FromBody] CreateOrUpdateAppConfigurationRequest createRequest)
+        public async Task<ApiResponse> Post([FromBody] AppConfigurationDTO createRequest)
         {
             if (!ModelState.IsValid) { throw new ApiProblemDetailsException(ModelState); }
 
-            var config = _mapper.Map<AppConfiguration>(createRequest);
+            var config = _mapper.Map<AppConfigurationEntity>(createRequest);
             return new ApiResponse("Record successfully created.", await _appConfigurationRepository.CreateOrUpdateAsync(config), Status201Created);
         }
     }

@@ -20,7 +20,7 @@ namespace buying_order_server.Services
             _logger = logger;
         }
 
-        public async Task<List<BuyingOrdersResponse>> GetBuyingOrdersAsync(CancellationToken cancellationToken)
+        public async Task<List<BuyingOrdersDTO>> GetBuyingOrdersAsync(CancellationToken cancellationToken)
         {
             if (cancellationToken.IsCancellationRequested)
             {
@@ -36,12 +36,12 @@ namespace buying_order_server.Services
             }
 
             var jsonString = await httpResponse.Content.ReadAsStringAsync();
-            var data = JsonSerializer.Deserialize<List<BuyingOrdersResponse>>(jsonString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            var data = JsonSerializer.Deserialize<List<BuyingOrdersDTO>>(jsonString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
             return data;
         }
 
-        public async Task<List<ProviderResponse>> GetProvidersAsync(CancellationToken cancellationToken)
+        public async Task<List<ProviderDTO>> GetProvidersAsync(CancellationToken cancellationToken)
         {
             if (cancellationToken.IsCancellationRequested)
             {
@@ -60,7 +60,7 @@ namespace buying_order_server.Services
                 }
 
                 var jsonString = await httpResponse.Content.ReadAsStringAsync();
-                var data = JsonSerializer.Deserialize<List<ProviderResponse>>(jsonString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                var data = JsonSerializer.Deserialize<List<ProviderDTO>>(jsonString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
                 return data;
             }
             catch (Exception e)

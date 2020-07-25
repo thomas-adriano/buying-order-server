@@ -9,11 +9,9 @@ namespace buying_order_server.Infrastructure.Configs
     {
         public MappingProfileConfiguration()
         {
-            CreateMap<AppConfiguration, CreateOrUpdateAppConfigurationRequest>().ReverseMap();
-            CreateMap<AppConfiguration, CreateOrUpdateAppConfigurationResponse>().ReverseMap();
+            CreateMap<AppConfigurationEntity, AppConfigurationDTO>().ReverseMap();
 
-            CreateMap<PostponedOrder, CreateOrUpdatePostponeOrderRequest>().ReverseMap();
-            CreateMap<PostponedOrder, CreateOrUpdatePostponedOrderResponse>().ReverseMap();
+            CreateMap<PostponedOrderEntity, PostponedOrderDTO>().ReverseMap();
         }
     }
 }

@@ -1,5 +1,6 @@
 using FluentMigrator.Runner;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Server.Kestrel.Https;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -42,6 +43,12 @@ namespace buying_order_server
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.ConfigureKestrel(o =>
+                    {
+                        o.ConfigureHttpsDefaults(o =>
+                            o.ClientCertificateMode = ClientCertificateMode.RequireCertificate
+                        );
+                    });
                 })
                .UseSerilog((hostingContext, loggerConfig) =>
                     loggerConfig.ReadFrom.Configuration(hostingContext.Configuration)

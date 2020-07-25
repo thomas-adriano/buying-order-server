@@ -1,4 +1,5 @@
 ﻿using buying_order_server.Contracts;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -6,7 +7,7 @@ namespace buying_order_server.Infrastructure.Installers
 {
     internal class RegisterCors : IServiceRegistration
     {
-        public void RegisterAppServices(IServiceCollection services, IConfiguration config)
+        public void RegisterAppServices(IServiceCollection services, IConfiguration config, IWebHostEnvironment env)
         {
             //Configure CORS to allow any origin, header and method. 
             //Change the CORS policy based on your requirements.

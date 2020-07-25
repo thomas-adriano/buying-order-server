@@ -18,7 +18,7 @@ namespace buying_order_server.Data.Repository
             _logger = logger;
         }
 
-        public async Task<PostponedOrder> CreateOrUpdateAsync(PostponedOrder entity)
+        public async Task<PostponedOrderEntity> CreateOrUpdateAsync(PostponedOrderEntity entity)
         {
             var stmt = @"INSERT INTO ""PostponedOrder"" as PO 
                             (""OrderId"", ""Date"", ""Count"") 
@@ -33,11 +33,11 @@ namespace buying_order_server.Data.Repository
             parameters.Add("Date", entity.Date);
             parameters.Add("Count", 1);
 
-            await DbExecuteAsync<PostponedOrder>(stmt, parameters);
+            await DbExecuteAsync<PostponedOrderEntity>(stmt, parameters);
             return entity;
         }
 
-        public async Task<PostponedOrder> GetByIdAsync(object id)
+        public async Task<PostponedOrderEntity> GetByIdAsync(object id)
         {
             var query = @"SELECT * FROM ""PostponedOrder""
                           WHERE ""OrderId"" = @OrderId 
@@ -47,7 +47,7 @@ namespace buying_order_server.Data.Repository
             var parsedId = Int32.Parse($"{id}");
             parameters.Add("OrderId", parsedId);
 
-            return await DbQuerySingleAsync<PostponedOrder>(query, parameters);
+            return await DbQuerySingleAsync<PostponedOrderEntity>(query, parameters);
         }
 
         public Task<bool> DeleteAsync(object id)
@@ -60,22 +60,22 @@ namespace buying_order_server.Data.Repository
             throw new NotImplementedException();
         }
 
-        Task<IEnumerable<PostponedOrder>> IRepository<PostponedOrder>.GetAllAsync()
+        Task<IEnumerable<PostponedOrderEntity>> IRepository<PostponedOrderEntity>.GetAllAsync()
         {
             throw new NotImplementedException();
         }
 
-        Task<PostponedOrder> IRepository<PostponedOrder>.GetLastAsync()
+        Task<PostponedOrderEntity> IRepository<PostponedOrderEntity>.GetLastAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> CreateAsync(PostponedOrder entity)
+        public Task<bool> CreateAsync(PostponedOrderEntity entity)
         {
             throw new NotImplementedException();
         }
 
-        public Task<bool> UpdateAsync(PostponedOrder entity)
+        public Task<bool> UpdateAsync(PostponedOrderEntity entity)
         {
             throw new NotImplementedException();
         }

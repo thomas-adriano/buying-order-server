@@ -4,13 +4,14 @@ using System;
 
 namespace buying_order_server.DTO.Request
 {
-    public class CreateOrUpdatePostponeOrderRequest
+    public class PostponedOrderDTO : DTO
     {
         public string OrderId { get; set; }
         public DateTime Date { get; set; }
+        public int Count { get; set; }
     }
 
-    public class PostponeOrderRequestValidator : AbstractValidator<CreateOrUpdatePostponeOrderRequest>
+    public class PostponeOrderRequestValidator : AbstractValidator<PostponedOrderDTO>
     {
         public PostponeOrderRequestValidator()
         {

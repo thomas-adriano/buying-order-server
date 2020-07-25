@@ -2,7 +2,7 @@
 
 namespace buying_order_server.Data.Entity
 {
-    public class OrderNotification : EntityBase
+    public class OrderNotificationEntity : EntityBaseEntity
     {
         public long BuyingOrderId { get; set; }
         public long ProviderId { get; set; }

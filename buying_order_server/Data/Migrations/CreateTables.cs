@@ -10,7 +10,8 @@ namespace buying_order_server.Data.Migrations
         public override void Up()
         {
             Create.Table("OrderNotification")
-                .WithColumn("BuyingOrderId").AsInt32().PrimaryKey()
+                .WithColumn("Id").AsInt32().PrimaryKey().Identity()
+                .WithColumn("BuyingOrderId").AsInt32().Unique()
                 .WithColumn("ProviderId").AsInt32()
                 .WithColumn("Timestamp").AsDateTime()
                 .WithColumn("Sent").AsBoolean()
@@ -41,12 +42,13 @@ namespace buying_order_server.Data.Migrations
                 .WithColumn("RowModifiedDateTimeUtc").AsString().Nullable();
 
             Create.Table("PostponedOrder")
-                 .WithColumn("OrderId").AsInt32().PrimaryKey()
+                 .WithColumn("Id").AsInt32().PrimaryKey().Identity()
+                 .WithColumn("OrderId").AsInt32().Unique()
                  .WithColumn("Count").AsInt32()
                  .WithColumn("Date").AsDateTime();
 
             Insert.IntoTable("AppConfiguration").Row(
-                new AppConfiguration
+                new AppConfigurationEntity
                 {
                     AppEmailName = "Inspire Home",
                     AppEmailUser = "viola.von@ethereal.email",

@@ -1,12 +1,9 @@
 ﻿
 namespace buying_order_server.DTO.Response
 {
-    public class ExecutionStatusResponse
+    public class ExecutionStatusDTO
     {
-
-
-
-        public ExecutionStatusResponse() { }
+        public ExecutionStatusDTO() { }
 
         public AppExecutionStatuses Status { get; set; }
     }

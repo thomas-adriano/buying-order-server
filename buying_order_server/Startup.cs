@@ -19,9 +19,11 @@ namespace buying_order_server
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private IWebHostEnvironment CurrentEnvironment;
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            CurrentEnvironment = env;
         }
 
         public IConfiguration Configuration { get; }
@@ -29,7 +31,7 @@ namespace buying_order_server
         public void ConfigureServices(IServiceCollection services)
         {
             //Register services in Installers folder
-            services.AddServicesInAssembly(Configuration);
+            services.AddServicesInAssembly(Configuration, CurrentEnvironment);
 
             //Register MVC/Web API, NewtonsoftJson and add FluentValidation Support
             services.AddControllers()
@@ -84,10 +86,10 @@ namespace buying_order_server
 
             //Enable AutoWrapper.Core
             //More info see: https://github.com/proudmonkey/AutoWrapper
-            app.UseApiResponseAndExceptionWrapper(new AutoWrapperOptions { IsDebug = true, UseApiProblemDetailsException = true, IsApiOnly = false, WrapWhenApiPathStartsWith = "/api", BypassHTMLValidation = true });
+            app.UseApiResponseAndExceptionWrapper(new AutoWrapperOptions { IsDebug = env.IsDevelopment(), UseApiProblemDetailsException = true, IsApiOnly = false, WrapWhenApiPathStartsWith = "/api", BypassHTMLValidation = true });
 
             //Adds authenticaton middleware to the pipeline so authentication will be performed automatically on each request to host
-            //app.UseAuthentication();
+            app.UseAuthentication();
 
             //Adds authorization middleware to the pipeline to make sure the Api endpoint cannot be accessed by anonymous clients
             //app.UseAuthorization();

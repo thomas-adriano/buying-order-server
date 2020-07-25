@@ -2,6 +2,7 @@
 using buying_order_server.Contracts;
 using buying_order_server.Infrastructure.Configs;
 using buying_order_server.Services;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;
@@ -15,7 +16,7 @@ namespace buying_order_server.Infrastructure.Installers
 {
     internal class RegisterApiResources : IServiceRegistration
     {
-        public void RegisterAppServices(IServiceCollection services, IConfiguration config)
+        public void RegisterAppServices(IServiceCollection services, IConfiguration config, IWebHostEnvironment env)
         {
             var policyConfigs = new HttpClientPolicyConfiguration() { RetryTimeoutInSeconds = 3, RetryDelayInMs = 3000, RetryCount = 3, MaxAttemptBeforeBreak = 3, BreakDurationInSeconds = 3};
             config.Bind("HttpClientPolicies", policyConfigs);

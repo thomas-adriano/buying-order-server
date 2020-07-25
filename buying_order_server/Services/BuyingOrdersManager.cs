@@ -27,7 +27,7 @@ namespace buying_order_server.Services
             _postponedOrderRepo = postponedOrderRepo;
         }
 
-        public async Task<List<BuyingOrder>> getBuyingOrdersAsync(CancellationToken cancellationToken)
+        public async Task<List<BuyingOrderWithProviderDTO>> getBuyingOrdersAsync(CancellationToken cancellationToken)
         {
             try
             {
@@ -42,8 +42,8 @@ namespace buying_order_server.Services
                        return !String.IsNullOrEmpty(order.IdContato);
                    });
 
-                var notPostponedOrders = new List<BuyingOrdersResponse>();
-                foreach (BuyingOrdersResponse o in ordersWithProviderId)
+                var notPostponedOrders = new List<BuyingOrdersDTO>();
+                foreach (BuyingOrdersDTO o in ordersWithProviderId)
                 {
                     if (o == null)
                     {
@@ -64,7 +64,7 @@ namespace buying_order_server.Services
                     }
                 }
 
-                List<BuyingOrder> ordersAndProviders;
+                List<BuyingOrderWithProviderDTO> ordersAndProviders;
 
                 ordersAndProviders = await Task.Run(async () =>
                 {
@@ -75,7 +75,7 @@ namespace buying_order_server.Services
                         .ConvertAll(p =>
                         {
                             var order = notPostponedOrders.FindAll(o => o.IdContato == p.Id).FirstOrDefault();
-                            return new BuyingOrder { Provider = p, Order = order };
+                            return new BuyingOrderWithProviderDTO { Provider = p, Order = order };
                         });
                 }
                 , cancellationToken);
@@ -88,7 +88,7 @@ namespace buying_order_server.Services
             {
                 _logger.LogError($"An error occurred while trying to create BuyingOrders list. {e.Message}");
             }
-            return new List<BuyingOrder>();
+            return new List<BuyingOrderWithProviderDTO>();
         }
     }
 }

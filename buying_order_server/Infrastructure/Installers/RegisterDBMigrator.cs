@@ -5,12 +5,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using FluentMigrator.Runner;
 using buying_order_server.Data.Migrations;
+using Microsoft.AspNetCore.Hosting;
 
 namespace buying_order_server.Infrastructure.Installers
 {
     public class RegisterDBMigrator : IServiceRegistration
     {
-        public void RegisterAppServices(IServiceCollection services, IConfiguration configuration)
+        public void RegisterAppServices(IServiceCollection services, IConfiguration configuration, IWebHostEnvironment env)
         {
             services.AddFluentMigratorCore()
                 .ConfigureRunner(rb => rb

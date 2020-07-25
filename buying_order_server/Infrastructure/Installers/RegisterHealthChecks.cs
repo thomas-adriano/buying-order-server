@@ -1,5 +1,6 @@
 ﻿using buying_order_server.Contracts;
 using buying_order_server.Infrastructure.HealthChecks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
@@ -9,7 +10,7 @@ namespace buying_order_server.Infrastructure.Installers
 {
     internal class RegisterHealthChecks : IServiceRegistration
     {
-        public void RegisterAppServices(IServiceCollection services, IConfiguration config)
+        public void RegisterAppServices(IServiceCollection services, IConfiguration config, IWebHostEnvironment env)
         {
             //Register HealthChecks and UI
             services.AddHealthChecks()

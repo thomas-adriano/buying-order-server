@@ -29,25 +29,25 @@ namespace buying_order_server.Data.Repository
             return await DbQuerySingleAsync<string>(query);
         }
 
-        public async Task<AppConfiguration> GetLastAsync()
+        public async Task<AppConfigurationEntity> GetLastAsync()
         {
             var query = @"SELECT * FROM ""AppConfiguration""
                             ORDER BY ""Id"" DESC 
                             LIMIT 1";
 
-            return await DbQuerySingleAsync<AppConfiguration>(query);
+            return await DbQuerySingleAsync<AppConfigurationEntity>(query);
         }
 
-        public async Task<IEnumerable<AppConfiguration>> GetAllAsync()
+        public async Task<IEnumerable<AppConfigurationEntity>> GetAllAsync()
         {
             var query = @"SELECT * FROM ""AppConfiguration""
                             ORDER BY ""Id"" DESC";
 
-            var data = await DbQueryAsync<AppConfiguration>(query);
+            var data = await DbQueryAsync<AppConfigurationEntity>(query);
             return data;
         }
 
-        public async Task<AppConfiguration> CreateOrUpdateAsync(AppConfiguration entity)
+        public async Task<AppConfigurationEntity> CreateOrUpdateAsync(AppConfigurationEntity entity)
         {
             var stmt = @"INSERT INTO ""AppConfiguration"" 
                             (""AppBlacklist"", ""AppCronPattern"", ""AppEmailFrom"",
@@ -76,11 +76,11 @@ namespace buying_order_server.Data.Repository
             parameters.Add("AppSMTPSecure", entity.AppSMTPSecure);
             parameters.Add("AppSMTPAddress", entity.AppSMTPAddress);
 
-            await DbExecuteAsync<AppConfiguration>(stmt, parameters);
+            await DbExecuteAsync<AppConfigurationEntity>(stmt, parameters);
             return entity;
         }
 
-        public Task<AppConfiguration> GetByIdAsync(object id)
+        public Task<AppConfigurationEntity> GetByIdAsync(object id)
         {
             throw new NotImplementedException();
         }
@@ -95,9 +95,9 @@ namespace buying_order_server.Data.Repository
             throw new NotImplementedException();
         }
 
-        public async Task<(IEnumerable<OrderNotification> Orders, Pagination Pagination)> paginatedExampleGetAppConfigurationAsync(UrlQueryParameters urlQueryParameters)
+        public async Task<(IEnumerable<OrderNotificationEntity> Orders, Pagination Pagination)> paginatedExampleGetAppConfigurationAsync(UrlQueryParameters urlQueryParameters)
         {
-            IEnumerable<OrderNotification> persons;
+            IEnumerable<OrderNotificationEntity> persons;
             int recordCount = default;
 
             var query = @"SELECT * FROM ""OrderNotification""
@@ -112,14 +112,14 @@ namespace buying_order_server.Data.Repository
             if (urlQueryParameters.IncludeCount)
             {
                 query += " SELECT COUNT(ID) FROM \"OrderNotification\"";
-                var pagedRows = await DbQueryMultipleAsync<OrderNotification, int>(query, param);
+                var pagedRows = await DbQueryMultipleAsync<OrderNotificationEntity, int>(query, param);
 
                 persons = pagedRows.Data;
                 recordCount = pagedRows.RecordCount;
             }
             else
             {
-                persons = await DbQueryAsync<OrderNotification>(query, param);
+                persons = await DbQueryAsync<OrderNotificationEntity>(query, param);
             }
 
             var metadata = new Pagination

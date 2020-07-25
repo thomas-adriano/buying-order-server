@@ -1,9 +1,8 @@
 ﻿
 namespace buying_order_server.DTO.Response
 {
-    public class ProviderResponse
+    public class ProviderDTO : DTO
     {
-        public string Id { get; set; }
         public string IdConvenio { get; set; }
         public string Codigo { get; set; }
         public string IdEmpresa { get; set; }

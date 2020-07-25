@@ -3,12 +3,13 @@ using AspNetCoreRateLimit;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Hosting;
 
 namespace buying_order_server.Infrastructure.Installers
 {
     internal class RegisterRequestRateLimiter : IServiceRegistration
     {
-        public void RegisterAppServices(IServiceCollection services, IConfiguration config)
+        public void RegisterAppServices(IServiceCollection services, IConfiguration config, IWebHostEnvironment env)
         {
             // needed to load configuration from appsettings.json
             services.AddOptions();
