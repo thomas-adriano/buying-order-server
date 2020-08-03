@@ -1,0 +1,33 @@
+version: "3.1"
+
+services:
+  db:
+    image: postgres:12.2
+    restart: always
+    environment:
+      POSTGRES_USER: buyingorderagent
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: INSPIRE_HOME
+    volumes:
+      - server_db_data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  server:
+    depends_on:
+      - db
+    image: buying-order-server:latest
+    restart: always
+    ports:
+      - 5000:5000
+
+volumes:
+  server_db_data:
+    external: true
+    

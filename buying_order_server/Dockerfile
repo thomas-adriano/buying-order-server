@@ -1,4 +1,4 @@
 FROM microsoft/aspnetcore
 WORKDIR /app
-COPY ./bin/Release/buying-order-server .
+COPY ./dist .
 ENTRYPOINT ["dotnet", "buying_order_server.dll"]
