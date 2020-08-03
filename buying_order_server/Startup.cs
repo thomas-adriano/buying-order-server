@@ -88,12 +88,6 @@ namespace buying_order_server
             //More info see: https://github.com/proudmonkey/AutoWrapper
             app.UseApiResponseAndExceptionWrapper(new AutoWrapperOptions { IsDebug = env.IsDevelopment(), UseApiProblemDetailsException = true, IsApiOnly = false, WrapWhenApiPathStartsWith = "/api", BypassHTMLValidation = true });
 
-            //Adds authenticaton middleware to the pipeline so authentication will be performed automatically on each request to host
-            app.UseAuthentication();
-
-            //Adds authorization middleware to the pipeline to make sure the Api endpoint cannot be accessed by anonymous clients
-            //app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

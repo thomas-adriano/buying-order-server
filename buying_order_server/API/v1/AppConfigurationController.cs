@@ -1,13 +1,13 @@
 ﻿using buying_order_server.Contracts;
 using buying_order_server.Data.Entity;
 using buying_order_server.DTO.Request;
-using buying_order_server.DTO.Response;
 using AutoMapper;
 using AutoWrapper.Wrappers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Threading.Tasks;
 using static Microsoft.AspNetCore.Http.StatusCodes;
+using Microsoft.AspNetCore.Authorization;
 
 namespace buying_order_server.API.v1
 {
