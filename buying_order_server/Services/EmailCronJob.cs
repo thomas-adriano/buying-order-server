@@ -1,7 +1,6 @@
 ﻿using buying_order_server.Contracts;
 using buying_order_server.Data.Entity;
 using buying_order_server.DTO.Response;
-using buying_order_server.Exceptions;
 using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
