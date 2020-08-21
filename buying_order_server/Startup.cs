@@ -55,8 +55,11 @@ namespace buying_order_server
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHttpsRedirection();
+            }
 
-            app.UseHttpsRedirection();
 
             //Enable Swagger and SwaggerUI
             app.UseSwagger();
