@@ -59,7 +59,7 @@ namespace buying_order_server.Data.Repository
                             @AppEmailHtml, @AppEmailName, @AppEmailPassword, @AppEmailSubject,
                             @AppEmailText, @AppEmailUser, @AppReplyLink, @AppNotificationTriggerDelta,
                             @AppSMTPPort, @AppSMTPSecure, @AppSMTPAddress)";
-               
+
             var parameters = new DynamicParameters();
             parameters.Add("AppBlacklist", entity.AppBlacklist);
             parameters.Add("AppCronPattern", entity.AppCronPattern);
@@ -93,45 +93,6 @@ namespace buying_order_server.Data.Repository
         public Task<bool> ExistAsync(object id)
         {
             throw new NotImplementedException();
-        }
-
-        public async Task<(IEnumerable<OrderNotificationEntity> Orders, Pagination Pagination)> paginatedExampleGetAppConfigurationAsync(UrlQueryParameters urlQueryParameters)
-        {
-            IEnumerable<OrderNotificationEntity> persons;
-            int recordCount = default;
-
-            var query = @"SELECT * FROM ""OrderNotification""
-                            ORDER BY ID DESC 
-                            Limit @Limit Offset @Offset";
-
-
-            var param = new DynamicParameters();
-            param.Add("Limit", urlQueryParameters.PageSize);
-            param.Add("Offset", urlQueryParameters.PageNumber);
-
-            if (urlQueryParameters.IncludeCount)
-            {
-                query += " SELECT COUNT(ID) FROM \"OrderNotification\"";
-                var pagedRows = await DbQueryMultipleAsync<OrderNotificationEntity, int>(query, param);
-
-                persons = pagedRows.Data;
-                recordCount = pagedRows.RecordCount;
-            }
-            else
-            {
-                persons = await DbQueryAsync<OrderNotificationEntity>(query, param);
-            }
-
-            var metadata = new Pagination
-            {
-                PageNumber = urlQueryParameters.PageNumber,
-                PageSize = urlQueryParameters.PageSize,
-                TotalRecords = recordCount
-
-            };
-
-            return (persons, metadata);
-
         }
 
         public async Task<bool> ExecuteWithTransactionScope()

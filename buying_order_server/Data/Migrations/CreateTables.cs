@@ -1,5 +1,5 @@
-﻿using buying_order_server.Data.Entity;
-using FluentMigrator;
+﻿using FluentMigrator;
+using buying_order_server.Data.Entity;
 
 namespace buying_order_server.Data.Migrations
 {
@@ -9,17 +9,6 @@ namespace buying_order_server.Data.Migrations
 
         public override void Up()
         {
-            Create.Table("OrderNotification")
-                .WithColumn("Id").AsInt32().PrimaryKey().Identity()
-                .WithColumn("BuyingOrderId").AsInt32().Unique()
-                .WithColumn("ProviderId").AsInt32()
-                .WithColumn("Timestamp").AsDateTime()
-                .WithColumn("Sent").AsBoolean()
-                .WithColumn("OrderDate").AsDate()
-                .WithColumn("EstimatedOrderDate").AsDate()
-                .WithColumn("ProviderEmail").AsString()
-                .WithColumn("EmployeeEmail").AsString();
-
             Create.Table("AppConfiguration")
                 .WithColumn("Id").AsInt32().PrimaryKey().Identity()
                 .WithColumn("AppEmailName").AsString()
@@ -73,7 +62,6 @@ namespace buying_order_server.Data.Migrations
 
         public override void Down()
         {
-            Delete.Table("OrderNotification");
             Delete.Table("AppConfiguration");
             Delete.Table("PostponedOrder");
         }
